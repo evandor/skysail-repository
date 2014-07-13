@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1405235155312' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1405235846134' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='skysail.server.ext.osgi.listener'/>
@@ -2528,6 +2528,48 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='javax.servlet'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='2.5.0.v200910301333'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='c2030131f54c997400a1b245980f609489fd4cded5283ac3fb17bfee6ca8ff49'/>
+      <attribute name='url' value='javax.servlet/javax.servlet-2.5.0.jar'/>
+      <attribute name='size' type='Long' value='118865'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='2.5.0.v200910301333'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='2.5.0.v200910301333'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet'/>
+      <attribute name='version' type='Version' value='2.5.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='2.5.0.v200910301333'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet.http'/>
+      <attribute name='version' type='Version' value='2.5.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='2.5.0.v200910301333'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet.resources'/>
+      <attribute name='version' type='Version' value='2.5.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='2.5.0.v200910301333'/>
+    </capability>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(|(&amp;(osgi.ee=CDC/Foundation)(version=1.1))(&amp;(osgi.ee=JavaSE)(version=1.4)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='javax.el-api'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='3.0.0'/>
@@ -3494,6 +3536,109 @@
     </requirement>
     <requirement namespace='osgi.ee'>
       <directive name='filter' value='(|(&amp;(osgi.ee=JavaSE)(version=1.5))(&amp;(osgi.ee=JavaSE)(version=1.6)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='6aa529e0771fdbc0027dab1627132d19eca68c2c7a3479bc326b45054658dbe2'/>
+      <attribute name='url' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi/de.twentyeleven.skysail.org.antlr.stringtemplate-osgi-4.0.2.jar'/>
+      <attribute name='size' type='Long' value='395816'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.antlr.runtime.tree'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.antlr.runtime,org.antlr.runtime.misc'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.antlr.runtime.debug'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.antlr.runtime,org.antlr.runtime.tree,org.antlr.runtime.misc'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.stringtemplate.v4'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.stringtemplate.v4.debug,org.antlr.runtime,org.stringtemplate.v4.misc,org.stringtemplate.v4.compiler,org.stringtemplate.v4.gui'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.antlr.runtime'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.antlr.runtime.tree,org.antlr.runtime.misc'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.antlr.runtime.misc'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.stringtemplate.v4.debug'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.stringtemplate.v4,org.stringtemplate.v4.compiler'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.stringtemplate.v4.misc'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.stringtemplate.v4,org.antlr.runtime,org.antlr.runtime.misc,org.stringtemplate.v4.compiler'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.stringtemplate.v4.compiler'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.stringtemplate.v4.misc,org.antlr.runtime.tree,org.stringtemplate.v4,org.antlr.runtime'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.stringtemplate.v4.gui'/>
+      <attribute name='version' type='Version' value='4.0.2'/>
+      <attribute name='bundle-symbolic-name' value='de.twentyeleven.skysail.org.antlr.stringtemplate-osgi'/>
+      <attribute name='bundle-version' type='Version' value='4.0.2'/>
+      <directive name='uses' value='org.antlr.runtime.tree,javax.swing.tree,javax.swing.event,org.stringtemplate.v4,org.stringtemplate.v4.debug,org.stringtemplate.v4.misc,javax.swing,javax.swing.text,org.antlr.runtime,org.stringtemplate.v4.compiler,javax.swing.border'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.border)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.event)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.text)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.swing.tree)'/>
+      <directive name='resolution' value='optional'/>
     </requirement>
   </resource>
   <resource>
