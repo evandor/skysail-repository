@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1405236547850' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1405237523529' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='skysail.server.ext.osgi.listener'/>
@@ -44,6 +44,105 @@
     <requirement namespace='osgi.extender'>
       <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
       <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.gemini.jpa'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.2.0.M1'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='da27cacc8e32641bef37eadd3ce058147b7c2e6388daf686708fb8b56b73999f'/>
+      <attribute name='url' value='org.eclipse.gemini.jpa/org.eclipse.gemini.jpa-1.2.0.jar'/>
+      <attribute name='size' type='Long' value='185637'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.gemini.jpa'/>
+      <attribute name='bundle-version' type='Version' value='1.2.0.M1'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.gemini.jpa'/>
+      <attribute name='bundle-version' type='Version' value='1.2.0.M1'/>
+    </capability>
+    <capability namespace='osgi.extender'>
+      <attribute name='osgi.extender' value='osgi.jpa'/>
+      <attribute name='provider' value='org.eclipse.gemini.jpa'/>
+      <attribute name='version' type='Version' value='1.1.0'/>
+      <directive name='uses' value='org.osgi.service.jpa,java.persistence,javax.persistence.criteria,javax.persistence.metamodel,javax.persistence.spi'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.persistence)(version&gt;=1.1.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.persistence.criteria)(version&gt;=1.1.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.persistence.metamodel)(version&gt;=1.1.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.persistence.spi)(version&gt;=1.1.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.parsers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework.hooks.weaving)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework.wiring)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jndi)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jpa)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.packageadmin)(version&gt;=1.2.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.3.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.osgi.util.tracker)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.bundle'>
+      <directive name='filter' value='(&amp;(osgi.wiring.bundle=org.eclipse.persistence.asm)(bundle-version&gt;=3.3.1))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.bundle'>
+      <directive name='filter' value='(&amp;(osgi.wiring.bundle=org.eclipse.persistence.antlr)(bundle-version&gt;=3.2.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.bundle'>
+      <directive name='filter' value='(&amp;(osgi.wiring.bundle=org.eclipse.persistence.core)(bundle-version&gt;=2.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.bundle'>
+      <directive name='filter' value='(&amp;(osgi.wiring.bundle=org.eclipse.persistence.jpa)(bundle-version&gt;=2.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.bundle'>
+      <directive name='filter' value='(&amp;(osgi.wiring.bundle=org.eclipse.persistence.jpa.jpql)(bundle-version&gt;=2.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
     </requirement>
   </resource>
   <resource>
@@ -4232,6 +4331,48 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.gemini.dbaccess.derby'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='b448505644bd86db125b6c7325f48030f376b518d0f4d2af14dd49bd0cddbff1'/>
+      <attribute name='url' value='org.eclipse.gemini.dbaccess.derby/org.eclipse.gemini.dbaccess.derby-1.1.0.jar'/>
+      <attribute name='size' type='Long' value='13875'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.gemini.dbaccess.derby'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.gemini.dbaccess.derby'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.derby.client.am)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.derby.jdbc)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.gemini.dbaccess)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.apache.commons.jci-core'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='1.1.0'/>
@@ -7167,6 +7308,42 @@
     <requirement namespace='osgi.extender'>
       <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
       <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.gemini.dbaccess.util'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='5cfc1a45a4007a4247e5b68ebefba80c7766ae0fbd1e521f96d3a413a81454f4'/>
+      <attribute name='url' value='org.eclipse.gemini.dbaccess.util/org.eclipse.gemini.dbaccess.util-1.1.0.jar'/>
+      <attribute name='size' type='Long' value='12067'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.gemini.dbaccess.util'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.gemini.dbaccess.util'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.gemini.dbaccess'/>
+      <attribute name='version' type='Version' value='1.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.gemini.dbaccess.util'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0.RELEASE'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
     </requirement>
   </resource>
   <resource>
