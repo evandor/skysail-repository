@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1405238834812' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1405239121159' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.eclipse.persistence.antlr'/>
@@ -7698,6 +7698,53 @@
     </requirement>
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(osgi.wiring.package=net.sf.cglib.proxy)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.jboss.logging.jboss-logging'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='3.1.2.GA'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='46ce0368aa7a28df30b039abace696f00f182b266d566b17c887e0093d6e09db'/>
+      <attribute name='url' value='org.jboss.logging.jboss-logging/org.jboss.logging.jboss-logging-3.1.2.jar'/>
+      <attribute name='size' type='Long' value='55248'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.jboss.logging.jboss-logging'/>
+      <attribute name='bundle-version' type='Version' value='3.1.2.GA'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.jboss.logging.jboss-logging'/>
+      <attribute name='bundle-version' type='Version' value='3.1.2.GA'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.jboss.logging'/>
+      <attribute name='version' type='Version' value='3.1.2.GA'/>
+      <attribute name='bundle-symbolic-name' value='org.jboss.logging.jboss-logging'/>
+      <attribute name='bundle-version' type='Version' value='3.1.2.GA'/>
+      <directive name='uses' value='org.jboss.logmanager,org.apache.log4j,org.slf4j.spi,org.slf4j'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.log4j)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.jboss.logging)(version&gt;=3.1.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.jboss.logmanager)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.6.0))'/>
+      <directive name='resolution' value='optional'/>
     </requirement>
   </resource>
   <resource>
