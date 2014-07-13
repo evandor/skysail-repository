@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1405032206378' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1405235155312' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='skysail.server.ext.osgi.listener'/>
@@ -1420,6 +1420,400 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.shiro.core'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='ebd46554df8fb0399ce63de7dc2802d0e7d00442aef986e66465dd18f5dd0d7d'/>
+      <attribute name='url' value='org.apache.shiro.core/org.apache.shiro.core-1.2.2.jar'/>
+      <attribute name='size' type='Long' value='366702'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.crypto'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.crypto,org.apache.shiro.util,org.apache.shiro,javax.crypto.spec,org.slf4j'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authc.pam'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,org.apache.shiro.realm,org.slf4j,org.apache.shiro.util,org.apache.shiro.subject'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authz.aop'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authz,org.apache.shiro.aop,org.apache.shiro.authz.annotation,org.apache.shiro.subject'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.codec'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro,org.apache.shiro.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authc.credential'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,org.apache.shiro.crypto.hash,org.apache.shiro.crypto.hash.format,org.apache.shiro.util,org.slf4j,org.apache.shiro.codec'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.crypto.hash.format'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.crypto.hash,org.apache.shiro.util,org.apache.shiro.codec'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.subject'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro,org.apache.shiro.util,org.apache.shiro.subject.support,org.apache.shiro.session,org.apache.shiro.mgt,org.apache.shiro.authc,org.apache.shiro.authz'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.concurrent'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro,org.apache.shiro.subject'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.cache'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.util,org.apache.shiro'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authz.annotation'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.realm.activedirectory'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,javax.naming,javax.naming.directory,org.apache.shiro.authz,javax.naming.ldap,org.apache.shiro.subject,org.slf4j,org.apache.shiro.realm.ldap'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authc'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.subject,org.slf4j,org.apache.shiro.authz,org.apache.shiro,org.apache.shiro.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.jndi'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.naming,org.slf4j,org.apache.shiro.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.util,org.apache.shiro.subject,org.apache.shiro.mgt'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.realm.jdbc'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,org.apache.shiro.realm,org.apache.shiro.config,javax.sql,org.apache.shiro.authz,org.apache.shiro.util,org.apache.shiro.subject,org.slf4j'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.crypto.hash'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.crypto,org.apache.shiro.codec,org.apache.shiro.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.functor'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.util'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.slf4j,org.apache.shiro.subject,org.apache.shiro,org.apache.shiro.authz,org.apache.shiro.authz.permission,org.apache.shiro.codec,org.apache.shiro.mgt'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.mgt'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,org.apache.shiro.crypto,org.apache.shiro.io,org.apache.shiro.codec,org.apache.shiro.util,org.apache.shiro.subject,org.slf4j,org.apache.shiro.authc.pam,org.apache.shiro.authz,org.apache.shiro.cache,org.apache.shiro.realm,org.apache.shiro.session.mgt,org.apache.shiro.subject.support,org.apache.shiro.session'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.realm.ldap'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,javax.naming,org.apache.shiro.realm,org.apache.shiro.authz,org.apache.shiro.subject,org.slf4j,javax.naming.ldap,org.apache.shiro.util,org.apache.shiro.authc.credential,org.apache.shiro.ldap,javax.naming.directory'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.io'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.util,org.slf4j,org.apache.shiro'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.realm'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,org.apache.shiro.authc.credential,org.apache.shiro.cache,org.apache.shiro.util,org.apache.shiro.subject,org.slf4j,org.apache.shiro.authz,org.apache.shiro.authz.permission'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.realm.jndi'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.jndi,org.apache.shiro.realm,org.apache.shiro.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.ldap'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.dao'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.config'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro,org.apache.shiro.util,org.slf4j,org.apache.shiro.io,org.apache.shiro.realm,org.apache.shiro.realm.text,org.apache.shiro.mgt,org.apache.commons.beanutils,org.apache.shiro.codec'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.dao'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authz'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro,org.apache.shiro.subject,org.apache.shiro.realm,org.apache.shiro.authz.permission'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.session.mgt'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authz,org.apache.shiro.util,org.slf4j,org.apache.shiro.session,org.apache.shiro.cache,org.apache.shiro.session.mgt.eis'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.aop'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro,org.apache.shiro.subject'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.subject.support'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authc,org.apache.shiro,org.apache.shiro.util,org.apache.shiro.subject,org.apache.shiro.session,org.apache.shiro.mgt,org.slf4j,org.apache.shiro.authz,org.apache.shiro.session.mgt'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.env'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.util,org.apache.shiro.mgt,org.apache.shiro'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.realm.text'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.config,org.apache.shiro.util,org.slf4j,org.apache.shiro.io,org.apache.shiro,org.apache.shiro.authc,org.apache.shiro.realm,org.apache.shiro.authz,org.apache.shiro.authz.permission'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.session'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.session.mgt.eis'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.session.mgt,org.apache.shiro.session,org.apache.shiro.cache,org.apache.shiro.util,org.slf4j'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.authz.permission'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.core'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.authz,org.apache.shiro.util,org.apache.shiro'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.crypto)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.crypto.spec)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming.directory)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming.ldap)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.beanutils)(version&gt;=1.8.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.aop)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authc)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authc.credential)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authc.pam)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authz)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authz.annotation)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authz.aop)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authz.permission)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.cache)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.codec)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.concurrent)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.config)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.crypto)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.crypto.hash)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.crypto.hash.format)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.dao)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.env)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.functor)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.io)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.jndi)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.ldap)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm.activedirectory)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm.jdbc)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm.jndi)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm.ldap)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm.text)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session.mgt.eis)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.subject)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.subject.support)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.apache.httpcomponents.httpclient'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='4.3.1'/>
@@ -2767,6 +3161,126 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='skysail.server.security.shiro'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='4.0.1.201407130649'/>
+      <directive name='singleton' value='true'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='337d2b95b0f66b94b50fd3e508bd1891db6b4382981ec83dae50e71b1751da29'/>
+      <attribute name='url' value='skysail.server.security.shiro/skysail.server.security.shiro-4.0.1.jar'/>
+      <attribute name='size' type='Long' value='74931'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='skysail.server.security.shiro'/>
+      <attribute name='bundle-version' type='Version' value='4.0.1.201407130649'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='skysail.server.security.shiro'/>
+      <attribute name='bundle-version' type='Version' value='4.0.1.201407130649'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.server.security.shiro'/>
+      <attribute name='version' type='Version' value='4.0.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.server.security.shiro'/>
+      <attribute name='bundle-version' type='Version' value='4.0.1.201407130649'/>
+      <directive name='uses' value='de.twenty11.skysail.api.um,de.twenty11.skysail.server.config,de.twenty11.skysail.server.security,de.twenty11.skysail.server.utils,javax.sql,org.apache.shiro.authc,org.apache.shiro.authc.credential,org.apache.shiro.realm.jdbc,org.apache.shiro.web.servlet,org.osgi.framework,org.restlet,org.restlet.security'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.api.um)(version&gt;=0.0.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.config)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=de.twenty11.skysail.server.security)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.utils)(version&gt;=0.8.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authc)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authc.credential)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm.jdbc)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.subject)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.subject.support)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.servlet)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.session.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.jdbc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.data)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.ext.crypto)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.routing)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.security)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.util)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='skysail.config.systemproperties'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='0.0.1.201407041410'/>
@@ -3140,6 +3654,48 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='classmate'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1a381660e2f27912e2c421a70bf816a1739e0475190a8efefbcdd00d89216887'/>
+      <attribute name='url' value='classmate/classmate-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='60282'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='classmate'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='classmate'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.classmate'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='classmate'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='com.fasterxml.classmate.members,com.fasterxml.classmate.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.classmate.members'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='classmate'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='com.fasterxml.classmate'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.classmate.types'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='classmate'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='com.fasterxml.classmate,com.fasterxml.classmate.members'/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='osgi.core'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='4.3.1.201210102023'/>
@@ -3430,6 +3986,95 @@
     </requirement>
     <requirement namespace='osgi.extender'>
       <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='skysail.server.mgt'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.7'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='96356436f81e4e194af68295107a167ff7024ee9f3bc40be0905d25940ed78a0'/>
+      <attribute name='url' value='skysail.server.mgt/skysail.server.mgt-0.1.7.jar'/>
+      <attribute name='size' type='Long' value='58478'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='skysail.server.mgt'/>
+      <attribute name='bundle-version' type='Version' value='0.1.7'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='skysail.server.mgt'/>
+      <attribute name='bundle-version' type='Version' value='0.1.7'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.unitprofile.agent)(version&gt;=0.0.0)(!(version&gt;=1.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.api.config)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.api.responses)(version&gt;=8.0.0)(!(version&gt;=9.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.app)(version&gt;=2.0.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.config)(version&gt;=2.1.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.core.restlet)(version&gt;=6.1.0)(!(version&gt;=7.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.core.restlet.request)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.core.restlet.response)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.events)(version&gt;=0.7.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=de.twenty11.skysail.server.services)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.collections)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.collections.buffer)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.component)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.data)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.resource)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.util)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
       <directive name='effective' value='active'/>
     </requirement>
   </resource>
@@ -4716,6 +5361,236 @@
     </requirement>
     <requirement namespace='osgi.ee'>
       <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.shiro.web'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='376df43b901a53fbfc77ff0ac9375d0801da7da246ee930198fddd476f88e071'/>
+      <attribute name='url' value='org.apache.shiro.web/org.apache.shiro.web-1.2.2.jar'/>
+      <attribute name='size' type='Long' value='142483'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.servlet'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.util,org.slf4j,org.apache.shiro,org.apache.shiro.web.subject,org.apache.shiro.subject,org.apache.shiro.mgt,org.apache.shiro.web.filter.mgt,org.apache.shiro.web.mgt,org.apache.shiro.session,javax.servlet.http,org.apache.shiro.io,org.apache.shiro.config,org.apache.shiro.web.util,org.apache.shiro.web.config,org.apache.shiro.web.env,org.apache.shiro.subject.support,org.apache.shiro.web.session'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.filter.authz'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.web.util,org.apache.shiro.web.filter,org.apache.shiro.util,org.apache.shiro.subject,javax.servlet.http,org.slf4j,org.apache.shiro.config'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.session.mgt'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.session.mgt,org.apache.shiro.web.servlet,org.apache.shiro.web.util,org.apache.shiro.session,org.slf4j,javax.servlet.http,org.apache.shiro.web.session,org.apache.shiro.authz'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.subject'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro,org.apache.shiro.subject,org.apache.shiro.mgt,org.apache.shiro.web.subject.support,org.apache.shiro.web.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.env'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.web.filter.mgt,org.apache.shiro.web.mgt,org.apache.shiro.mgt,org.apache.shiro.env,org.apache.shiro.config,org.apache.shiro.util,org.slf4j,org.apache.shiro.io,org.apache.shiro.web.util,org.apache.shiro.web.config'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.filter.authc'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.web.filter,org.apache.shiro.authc,org.apache.shiro.authz,org.apache.shiro.subject,org.apache.shiro.web.util,org.apache.shiro.codec,org.slf4j,javax.servlet.http,org.apache.shiro,org.apache.shiro.web.servlet,org.apache.shiro.session'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.session'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.web.servlet,org.apache.shiro.util,org.apache.shiro.session,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.tags'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.subject,javax.servlet.jsp,org.slf4j,org.apache.shiro,javax.servlet.jsp.tagext'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.filter.mgt'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='org.apache.shiro.web.filter.authc,javax.servlet,org.apache.shiro.web.filter.authz,org.apache.shiro.web.filter.session,org.apache.shiro.util,org.apache.shiro.config,org.apache.shiro.web.filter,org.slf4j,org.apache.shiro.web.util,javax.servlet.http,org.apache.shiro.web.servlet'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.util'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet.http,javax.servlet,org.apache.shiro,org.apache.shiro.util,org.apache.shiro.subject,org.slf4j,org.apache.shiro.web.env,org.apache.shiro.subject.support,org.apache.shiro.session'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.filter.session'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.web.filter,org.apache.shiro.subject.support'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.filter'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro,org.apache.shiro.web.util,org.apache.shiro.subject,org.apache.shiro.web.servlet,org.apache.shiro.util,org.slf4j,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.mgt'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.codec,org.apache.shiro.web.servlet,org.apache.shiro.web.util,org.apache.shiro.web.subject,org.apache.shiro.subject,org.slf4j,org.apache.shiro.mgt,javax.servlet.http,org.apache.shiro.web.session.mgt,org.apache.shiro.util,org.apache.shiro.realm,org.apache.shiro.session.mgt,org.apache.shiro.web.subject.support,org.apache.shiro.session'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.config'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.config,org.apache.shiro.web.filter.mgt,org.apache.shiro.util,org.slf4j,org.apache.shiro.web.mgt,org.apache.shiro.mgt'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.shiro.web.subject.support'/>
+      <attribute name='version' type='Version' value='1.2.2'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.shiro.web'/>
+      <attribute name='bundle-version' type='Version' value='1.2.2'/>
+      <directive name='uses' value='javax.servlet,org.apache.shiro.web.subject,org.apache.shiro.subject,org.apache.shiro.subject.support,org.apache.shiro.session.mgt,org.apache.shiro.web.util,org.apache.shiro.web.session.mgt,org.apache.shiro.util,org.apache.shiro.mgt,org.apache.shiro.session'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.jsp)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.jsp.tagext)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authc)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.authz)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.codec)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.config)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.env)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.io)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.realm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.session.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.subject)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.subject.support)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.config)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.env)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.filter)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.filter.authc)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.filter.authz)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.filter.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.filter.session)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.servlet)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.session)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.session.mgt)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.subject)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.subject.support)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.tags)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.shiro.web.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0))'/>
     </requirement>
   </resource>
   <resource>
