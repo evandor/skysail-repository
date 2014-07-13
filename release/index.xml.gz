@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1405239121159' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1405239331829' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.eclipse.persistence.antlr'/>
@@ -6434,6 +6434,65 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.restlet.ext.jackson'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='2.1.6.v20131205-2312'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='3182896905e1ec24cdbbed1b619aff619081ec6bd28201071dd843694e6dcd63'/>
+      <attribute name='url' value='org.restlet.ext.jackson/org.restlet.ext.jackson-2.1.6.jar'/>
+      <attribute name='size' type='Long' value='5784'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.restlet.ext.jackson'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.restlet.ext.jackson'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.restlet.ext.jackson'/>
+      <attribute name='version' type='Version' value='0.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.restlet.ext.jackson'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+      <directive name='uses' value='org.codehaus.jackson.map,org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.codehaus.jackson'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.codehaus.jackson)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.codehaus.jackson.map)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.data)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.engine.converter)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.engine.resource)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.representation)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.resource)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.apache.commons.jci-core'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='1.1.0'/>
@@ -6502,6 +6561,88 @@
     </requirement>
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(osgi.wiring.package=org.apache.commons.logging)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.restlet.ext.crypto'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='2.1.6.v20131205-2312'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='feacd6bbd2c847d146dc8dd15d8e5175e1f3c24c3f7d77be318395c06fa363d3'/>
+      <attribute name='url' value='org.restlet.ext.crypto/org.restlet.ext.crypto-2.1.6.jar'/>
+      <attribute name='size' type='Long' value='35728'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.restlet.ext.crypto'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.restlet.ext.crypto'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.restlet.ext.crypto'/>
+      <attribute name='version' type='Version' value='0.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.restlet.ext.crypto'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+      <directive name='uses' value='org.restlet.data,org.restlet.ext.crypto.internal,org.restlet.security,org.restlet,org.restlet.engine.util,org.restlet.representation,org.restlet.util,javax.crypto.spec,javax.crypto'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.restlet.ext.crypto.internal'/>
+      <attribute name='version' type='Version' value='0.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.restlet.ext.crypto'/>
+      <attribute name='bundle-version' type='Version' value='2.1.6.v20131205-2312'/>
+      <directive name='uses' value='org.restlet.data,org.restlet.engine.io,org.restlet.engine.util,org.restlet,org.restlet.util,org.restlet.engine.header,org.restlet.ext.crypto,org.restlet.security,javax.crypto.spec,javax.crypto,org.restlet.engine.security'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.crypto)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.crypto.spec)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.data)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.engine.header)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.engine.io)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.engine.security)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.engine.util)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.representation)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.security)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.util)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.5))'/>
     </requirement>
   </resource>
   <resource>
