@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1405266889245' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1405354547646' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.eclipse.persistence.antlr'/>
@@ -10836,6 +10836,136 @@
     </requirement>
     <requirement namespace='osgi.ee'>
       <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='skysail.api'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='fe36f1b94ffd90bb9ce43fd23455f1e435051bda06e74c05e94407acf8b6c6a5'/>
+      <attribute name='url' value='skysail.api/skysail.api-8.0.1.jar'/>
+      <attribute name='size' type='Long' value='93483'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.responses'/>
+      <attribute name='version' type='Version' value='8.0.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+      <directive name='uses' value='javax.validation,org.restlet,org.restlet.data'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.config'/>
+      <attribute name='version' type='Version' value='1.1.1'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.forms'/>
+      <attribute name='version' type='Version' value='3.0.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+      <directive name='uses' value='org.restlet.resource'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.services'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+      <directive name='uses' value='de.twenty11.skysail.api.services.logentry,org.restlet'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.structures.graph'/>
+      <attribute name='version' type='Version' value='0.0.1'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.services.logentry'/>
+      <attribute name='version' type='Version' value='0.0.1'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+      <directive name='uses' value='org.osgi.framework'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.um'/>
+      <attribute name='version' type='Version' value='0.0.1'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.hooks'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+      <directive name='uses' value='de.twenty11.skysail.api.domain,org.restlet'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.domain'/>
+      <attribute name='version' type='Version' value='1.1.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.features'/>
+      <attribute name='version' type='Version' value='3.0.0'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+      <directive name='uses' value='de.twenty11.skysail.api.um'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.mail'/>
+      <attribute name='version' type='Version' value='8.0.1'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='de.twenty11.skysail.api.jdbc'/>
+      <attribute name='version' type='Version' value='8.0.1'/>
+      <attribute name='bundle-symbolic-name' value='skysail.api'/>
+      <attribute name='bundle-version' type='Version' value='8.0.1.201407131701'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.validation)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.lang)(version&gt;=2.6.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.annotate)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.data)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.restlet.resource)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.8))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
     </requirement>
   </resource>
   <resource>
