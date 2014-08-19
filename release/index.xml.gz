@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1407590984688' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1408177960925' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='skysail.client'/>
@@ -7381,6 +7381,105 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.objenesis'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='7354817ccca815614168a3320f5f851bae21a1b3c32bb00f20517cd9f45ae6ba'/>
+      <attribute name='url' value='org.objenesis/org.objenesis-1.4.0.jar'/>
+      <attribute name='size' type='Long' value='45172'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator.android'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis,org.objenesis.instantiator'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator.basic'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis,org.objenesis.instantiator'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator.gcj'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis,org.objenesis.instantiator'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator.jrockit'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='COM.jrockit.reflect,org.objenesis,org.objenesis.instantiator,jrockit.vm'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator.perc'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis,org.objenesis.instantiator'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.instantiator.sun'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis,org.objenesis.instantiator,sun.reflect'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis.instantiator,org.objenesis.strategy'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objenesis.strategy'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.objenesis'/>
+      <attribute name='bundle-version' type='Version' value='1.4.0'/>
+      <directive name='uses' value='org.objenesis.instantiator,org.objenesis.instantiator.perc,org.objenesis,org.objenesis.instantiator.android,org.objenesis.instantiator.basic,org.objenesis.instantiator.gcj,org.objenesis.instantiator.sun,org.objenesis.instantiator.jrockit'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=COM.jrockit.reflect)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=COM.newmonics.PercClassloader)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=jrockit.vm)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=sun.reflect)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.apache.felix.eventadmin'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='1.3.2'/>
@@ -11424,6 +11523,44 @@
     </requirement>
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='uk.com.robust-it.cloning'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.8.5'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='30c65c8db86f262b3600f4a4c0e85a684b2c41e214e2a23554e98e7f0d659bb5'/>
+      <attribute name='url' value='uk.com.robust-it.cloning/uk.com.robust-it.cloning-1.8.5.jar'/>
+      <attribute name='size' type='Long' value='23150'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='uk.com.robust-it.cloning'/>
+      <attribute name='bundle-version' type='Version' value='1.8.5'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='uk.com.robust-it.cloning'/>
+      <attribute name='bundle-version' type='Version' value='1.8.5'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.rits.cloning'/>
+      <attribute name='version' type='Version' value='1.8.5'/>
+      <attribute name='bundle-symbolic-name' value='uk.com.robust-it.cloning'/>
+      <attribute name='bundle-version' type='Version' value='1.8.5'/>
+      <directive name='uses' value='org.objenesis'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.rits.perspectives'/>
+      <attribute name='version' type='Version' value='1.8.5'/>
+      <attribute name='bundle-symbolic-name' value='uk.com.robust-it.cloning'/>
+      <attribute name='bundle-version' type='Version' value='1.8.5'/>
+      <directive name='uses' value='com.rits.cloning'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.objenesis)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
   </resource>
   <resource>
