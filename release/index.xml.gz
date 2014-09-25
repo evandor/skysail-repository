@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1410600023139' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1410929313615' name='skysail releases (local)' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='skysail.client'/>
@@ -8256,6 +8256,246 @@
     </requirement>
     <requirement namespace='osgi.ee'>
       <directive name='filter' value='(&amp;(osgi.ee=JavaSE)(version=1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.springframework.context.support'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='52840c8da9fa71d47b53507df9e4ecc49892b109c9a1d92d61006f80ec4ec6be'/>
+      <attribute name='url' value='org.springframework.context.support/org.springframework.context.support-3.1.4.jar'/>
+      <attribute name='size' type='Long' value='107164'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.mail'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='org.springframework.core'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.mail.javamail'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='javax.activation,javax.mail,javax.mail.internet,org.springframework.beans.factory,org.springframework.core.io,org.springframework.mail'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.scheduling.commonj'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='commonj.timers,commonj.work,javax.naming,org.springframework.beans.factory,org.springframework.context,org.springframework.jndi,org.springframework.scheduling,org.springframework.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.scheduling.quartz'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='javax.sql,org.quartz,org.quartz.impl.jdbcjobstore,org.quartz.simpl,org.quartz.spi,org.quartz.utils,org.springframework.beans.factory,org.springframework.beans.support,org.springframework.context,org.springframework.core,org.springframework.core.io,org.springframework.scheduling,org.springframework.transaction,org.springframework.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.ui.freemarker'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='freemarker.cache,freemarker.template,org.springframework.beans.factory,org.springframework.context,org.springframework.core.io'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.ui.jasperreports'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='net.sf.jasperreports.engine'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.springframework.ui.velocity'/>
+      <attribute name='version' type='Version' value='3.1.4.RELEASE'/>
+      <attribute name='bundle-symbolic-name' value='org.springframework.context.support'/>
+      <attribute name='bundle-version' type='Version' value='3.1.4.RELEASE'/>
+      <directive name='uses' value='org.apache.commons.collections,org.apache.velocity.app,org.apache.velocity.exception,org.apache.velocity.runtime,org.apache.velocity.runtime.log,org.apache.velocity.runtime.resource,org.apache.velocity.runtime.resource.loader,org.springframework.beans.factory,org.springframework.context,org.springframework.core.io'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=commonj.timers)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=commonj.work)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=freemarker.cache)(version&gt;=2.3.14)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=freemarker.template)(version&gt;=2.3.14)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.activation)(version&gt;=0.0.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.internet)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.naming)(version&gt;=0.0.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.sql)(version&gt;=0.0.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=net.sf.jasperreports.engine)(version&gt;=2.0.5)(!(version&gt;=4.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=net.sf.jasperreports.engine.data)(version&gt;=2.0.5)(!(version&gt;=4.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=net.sf.jasperreports.engine.export)(version&gt;=2.0.5)(!(version&gt;=4.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.collections)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.logging)(version&gt;=1.1.1)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.app)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.context)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.exception)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.runtime)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.runtime.log)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.runtime.resource)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.velocity.runtime.resource.loader)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.quartz)(version&gt;=1.6.0)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.quartz.impl)(version&gt;=1.6.0)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.quartz.impl.jdbcjobstore)(version&gt;=1.6.0)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.quartz.simpl)(version&gt;=1.6.0)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.quartz.spi)(version&gt;=1.6.0)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.quartz.utils)(version&gt;=1.6.0)(!(version&gt;=3.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.beans)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.beans.factory)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.beans.support)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.context)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.core)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.core.io)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.core.io.support)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.core.task)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.jdbc.datasource)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.jdbc.support)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.jndi)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.scheduling)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.scheduling.support)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.transaction)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.transaction.support)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.springframework.util)(version&gt;=3.1.4)(!(version&gt;=3.1.5)))'/>
     </requirement>
   </resource>
   <resource>
