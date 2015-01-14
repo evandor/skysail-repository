@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1421240658238" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1421240815651" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -1547,6 +1547,42 @@
       <attribute name="bundle-version" type="Version" value="4.11.0"/>
       <directive name="uses" value="org.junit.internal.runners.model,org.junit.runner"/>
     </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.sun.el"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.2.0.v201303151357"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="e619eb228f7016017d2a8450e73a263edbac848a256095cf586590a16b622ac0"/>
+      <attribute name="url" value="release/com.sun.el-2.2.0.jar"/>
+      <attribute name="size" type="Long" value="137041"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.sun.el"/>
+      <attribute name="bundle-version" type="Version" value="2.2.0.v201303151357"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.sun.el"/>
+      <attribute name="bundle-version" type="Version" value="2.2.0.v201303151357"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.sun.el"/>
+      <attribute name="version" type="Version" value="2.2.0"/>
+      <attribute name="bundle-symbolic-name" value="com.sun.el"/>
+      <attribute name="bundle-version" type="Version" value="2.2.0.v201303151357"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.el)(version&gt;=2.2.0))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.5.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
+    </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
