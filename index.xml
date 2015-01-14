@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1421230789302" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1421240218225" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -1277,6 +1277,37 @@
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
       <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.googlecode.concurrentlinkedhashmap.lru"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.4.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="48f823692a8c26414a98b18572b3a07c4099d3cd04afe8babda62337d5540a95"/>
+      <attribute name="url" value="release/com.googlecode.concurrentlinkedhashmap.lru-1.4.0.jar"/>
+      <attribute name="size" type="Long" value="116575"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.googlecode.concurrentlinkedhashmap.lru"/>
+      <attribute name="bundle-version" type="Version" value="1.4.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.googlecode.concurrentlinkedhashmap.lru"/>
+      <attribute name="bundle-version" type="Version" value="1.4.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.googlecode.concurrentlinkedhashmap"/>
+      <attribute name="version" type="Version" value="1.4.0"/>
+      <attribute name="bundle-symbolic-name" value="com.googlecode.concurrentlinkedhashmap.lru"/>
+      <attribute name="bundle-version" type="Version" value="1.4.0"/>
+      <directive name="uses" value="sun.misc"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
     </requirement>
   </resource>
   <resource>
