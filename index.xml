@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1421305827346" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1423135691879" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -1969,6 +1969,487 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="etm.contrib"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="750f86c88f68f4accae8dc32f74b01122f5a06c495e780011d6bef3acc9d425d"/>
+      <attribute name="url" value="release/etm.contrib-1.2.3.jar"/>
+      <attribute name="size" type="Long" value="148781"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.util"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.renderer"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.renderer,etm.core.monitor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.console.standalone"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.monitor,etm.contrib.console,etm.contrib.console.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.rrd.rrd4j.template.db"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aggregation.filter"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.monitor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aop.spring"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="org.springframework.aop.support,org.aopalliance.aop,org.springframework.aop.target,org.springframework.aop,etm.core.monitor,org.springframework.aop.framework,etm.contrib.aop.aopalliance,org.springframework.beans.factory"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.console"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.monitor,etm.contrib.console.standalone,etm.core.util,etm.contrib.console.util,etm.contrib.console.actions,etm.core.plugin,etm.core.metadata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.renderer.plugin"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.renderer,org.apache.commons.logging,etm.core.monitor,etm.core.aggregation,etm.core.plugin,etm.core.monitor.event,etm.core.metadata,org.apache.log4j"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.console.resources"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.rrd.rrd4j"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.util,etm.contrib.rrd.core,etm.core.monitor,org.rrd4j.core,etm.core.aggregation,etm.contrib.aggregation.filter,etm.core.plugin,etm.core.metadata,org.rrd4j.graph,org.xml.sax"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.integration.spring.web"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="javax.servlet,etm.core.monitor,org.springframework.beans,org.springframework.context,etm.contrib.integration.web,org.springframework.web.context,org.springframework.web.context.support"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aggregation.log"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.renderer,etm.contrib.aggregation.filter,etm.core.monitor,org.apache.commons.logging,etm.core.metadata,org.apache.log4j"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aop.aspectwerkz"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.configuration,etm.core.monitor,org.codehaus.aspectwerkz.joinpoint,org.codehaus.aspectwerkz"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.console.servlet"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.monitor,etm.contrib.console,javax.servlet.http,javax.servlet,etm.contrib.console.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aop.aopalliance"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="org.aopalliance.intercept,etm.core.monitor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.integration.spring.configuration"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="org.springframework.beans.factory.support,org.springframework.beans.factory.xml,etm.contrib.console,org.w3c.dom,etm.core.util,org.springframework.beans.factory.config,org.springframework.beans.factory,org.aopalliance.intercept,etm.core.monitor,etm.contrib.aop.aopalliance,org.springframework.aop.framework.autoproxy,org.springframework.beans,org.springframework.util.xml,etm.core.aggregation,etm.core.configuration,etm.contrib.aggregation.log,etm.core.timer,etm.core.aggregation.persistence,etm.core.jmx"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.rrd.rrd4j.template.graph"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.integration.web"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="javax.servlet,etm.core.configuration,etm.core.monitor,etm.contrib.console.servlet,etm.contrib.console.util,etm.contrib.console,etm.contrib.console.actions,javax.servlet.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.integration.jca"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="javax.naming,javax.resource,etm.core.configuration,etm.core.util,javax.resource.spi,etm.core.monitor,javax.transaction.xa,javax.resource.spi.endpoint,javax.naming.spi"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aop.jboss"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.configuration,org.jboss.aop.joinpoint,etm.core.monitor,org.jboss.aop.advice"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.console.actions"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.contrib.util,etm.contrib.console,etm.contrib.console.util,etm.core.renderer,etm.core.monitor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.rrd.core"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.monitor,etm.core.aggregation,etm.core.plugin,etm.core.util,etm.core.monitor.event,etm.core.metadata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.renderer.swing"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.renderer,javax.swing.tree"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.console.util"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.contrib.util,etm.core.monitor,etm.contrib.console,etm.core.renderer,etm.core.util,etm.core.metadata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.contrib.aggregation.swing"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.contrib"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.renderer,javax.swing.tree,etm.core.monitor,etm.core.metadata"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.aggregation)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.aggregation.persistence)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.configuration)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.jmx)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.metadata)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.monitor)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.monitor.event)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.plugin)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.renderer)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.timer)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=etm.core.util)(version&gt;=1.2.3))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.naming.spi)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.resource)(version&gt;=1.5.0))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.resource.spi)(version&gt;=1.5.0))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.resource.spi.endpoint)(version&gt;=1.5.0))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet.http)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.swing.tree)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.transaction.xa)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.aopalliance.aop)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.aopalliance.intercept)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.commons.logging)(version&gt;=1.0.4))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.apache.log4j)(version&gt;=1.2.9))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.aspectwerkz)(version&gt;=2.0.0))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.codehaus.aspectwerkz.joinpoint)(version&gt;=2.0.0))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.aop.advice)(version&gt;=1.5.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.aop.joinpoint)(version&gt;=1.5.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.rrd4j.core)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.rrd4j.graph)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.aop)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.aop.framework)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.aop.framework.autoproxy)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.aop.support)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.aop.target)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.beans)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.beans.factory)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.beans.factory.config)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.beans.factory.support)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.beans.factory.xml)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.context)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.util.xml)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.web.context)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.springframework.web.context.support)(version&gt;=2.0.2))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="etm.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="3644c3e16c2ab87167ee832159d5ae88213027ca91f6c9804f0316db3b872a3f"/>
+      <attribute name="url" value="release/etm.core-1.2.3.jar"/>
+      <attribute name="size" type="Long" value="138959"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.renderer"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.monitor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.util"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.monitor,org.apache.log4j"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.monitor.event"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation.persistence,etm.core.monitor,etm.core.util,etm.core.aggregation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.monitor"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.renderer,etm.core.plugin,etm.core.metadata,etm.core.monitor.event,etm.core.aggregation,etm.core.configuration,etm.core.util,etm.core.timer,etm.core.aggregation.persistence"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.metadata"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.aggregation"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.renderer,etm.core.monitor,etm.core.metadata,etm.core.util,etm.core.monitor.event"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.plugin"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.monitor,etm.core.metadata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.configuration"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.timer,etm.core.monitor,etm.core.plugin,etm.core.util,etm.core.metadata,org.w3c.dom,etm.core.aggregation.persistence,etm.core.jmx,org.xml.sax,javax.xml.parsers"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.timer"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.metadata,sun.misc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.aggregation.persistence"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.util,etm.core.aggregation,etm.core.monitor.event,etm.core.monitor,etm.core.metadata"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="etm.core.jmx"/>
+      <attribute name="version" type="Version" value="1.2.3.1"/>
+      <attribute name="bundle-symbolic-name" value="etm.core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.3.1"/>
+      <directive name="uses" value="etm.core.aggregation,etm.core.util,etm.core.monitor.event,etm.core.monitor,etm.core.aggregation.persistence,javax.management,etm.core.plugin,etm.core.metadata,etm.core.renderer,javax.management.openmbean"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management.openmbean)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.log4j)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
     </requirement>
   </resource>
   <resource>
