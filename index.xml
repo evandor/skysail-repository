@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1424329930863" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1424330159975" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -2840,6 +2840,69 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.fasterxml.jackson.dataformat.jackson-dataformat-csv"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.5.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="9b123e3130107dd312074756c5f16be8e043f5e5072e917ccc729613dde949b0"/>
+      <attribute name="url" value="release/jackson-dataformat-csv-2.5.1.jar"/>
+      <attribute name="size" type="Long" value="87528"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.fasterxml.jackson.dataformat.jackson-dataformat-csv"/>
+      <attribute name="bundle-version" type="Version" value="2.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.fasterxml.jackson.dataformat.jackson-dataformat-csv"/>
+      <attribute name="bundle-version" type="Version" value="2.5.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.fasterxml.jackson.dataformat.csv"/>
+      <attribute name="version" type="Version" value="2.5.1"/>
+      <attribute name="bundle-symbolic-name" value="com.fasterxml.jackson.dataformat.jackson-dataformat-csv"/>
+      <attribute name="bundle-version" type="Version" value="2.5.1"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.base)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.format)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.io)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.json)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.type)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core.util)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.introspect)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.type)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.databind.util)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.6))"/>
