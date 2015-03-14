@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1426318264660" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1426318857099" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -20359,6 +20359,96 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.github.fge.uri-template"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="5bc99edfa927dcf5f0f7ee9ae440750139d97c8c9b5a23400b497f28adf3edc5"/>
+      <attribute name="url" value="release/uri-template-0.9.jar"/>
+      <attribute name="size" type="Long" value="57399"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+      <directive name="uses" value="com.github.fge.msgsimple.bundle,com.github.fge.msgsimple.load,com.github.fge.uritemplate.vars"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate.expression"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+      <directive name="uses" value="com.github.fge.uritemplate,com.github.fge.uritemplate.vars,com.github.fge.uritemplate.vars.specs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate.parse"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+      <directive name="uses" value="com.github.fge.uritemplate,com.github.fge.uritemplate.expression"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate.render"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+      <directive name="uses" value="com.github.fge.uritemplate,com.github.fge.uritemplate.expression,com.github.fge.uritemplate.vars.specs,com.github.fge.uritemplate.vars.values,com.google.common.base"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate.vars"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+      <directive name="uses" value="com.github.fge,com.github.fge.uritemplate.vars.values"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate.vars.specs"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.uritemplate.vars.values"/>
+      <attribute name="version" type="Version" value="0.9.0"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.uri-template"/>
+      <attribute name="bundle-version" type="Version" value="0.9.0"/>
+      <directive name="uses" value="com.github.fge.msgsimple.bundle,com.github.fge.uritemplate.expression,com.github.fge.uritemplate.render"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.bundle)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.load)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.collect)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.escape)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.net)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
     </requirement>
   </resource>
 </repository>
