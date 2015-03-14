@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1426317756811" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1426318264660" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -4054,6 +4054,571 @@
     </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.3))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.github.fge.json-schema-core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="52fa0dfe485f8b8553e4788254d39946133005780e8ed9a5477a5084ada9bd6c"/>
+      <attribute name="url" value="release/json-schema-core-1.2.5.jar"/>
+      <attribute name="size" type="Long" value="171779"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.exceptions"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.report"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.jsonschema.core.util,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.checkers"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jackson,com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.checkers.common"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.keyword.syntax.checkers.helpers,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.checkers.draftv3"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.keyword.syntax.checkers.helpers,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.checkers.draftv4"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.keyword.syntax.checkers.helpers,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.checkers.helpers"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jackson,com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.msgsimple.bundle,com.google.common.base"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.checkers.hyperschema"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.keyword.syntax.dictionaries"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.load"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.load.configuration,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.ref,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.jsonschema.core.tree.key"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.load.configuration"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.github.fge,com.github.fge.jackson,com.github.fge.jsonschema.core.load,com.github.fge.jsonschema.core.load.download,com.github.fge.jsonschema.core.load.uri"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.load.download"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.load.uri"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.messages"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.msgsimple.bundle,com.github.fge.msgsimple.load"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.processing"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.util,com.google.common.base"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.ref"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.exceptions"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.report"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.tree"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.core.ref,com.github.fge.jsonschema.core.tree.key,com.github.fge.jsonschema.core.util,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.tree.key"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.ref,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.util"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.github.fge,com.github.fge.jsonschema.core.report,com.github.fge.msgsimple.bundle,com.google.common.base,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.core.util.equivalence"/>
+      <attribute name="version" type="Version" value="1.2.5"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-core"/>
+      <attribute name="bundle-version" type="Version" value="1.2.5"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.tree,com.google.common.base"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.fasterxml.jackson.core)(version&gt;=2.2.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.databind)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.databind.node)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jackson)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jackson.jsonpointer)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.bundle)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.load)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.uritemplate)(version&gt;=0.9.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.cache)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.collect)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.io)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.net)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.primitives)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.annotation)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.mozilla.javascript)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.github.fge.json-schema-validator"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="fb15066e1e3039b58a18e6e4d6cf32fc57ca77299ebc9dfbcf11e105834a2174"/>
+      <attribute name="url" value="release/json-schema-validator-2.2.6.jar"/>
+      <attribute name="size" type="Long" value="232632"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.cfg"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge,com.github.fge.jsonschema,com.github.fge.jsonschema.core.ref,com.github.fge.jsonschema.library,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.examples"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.keyword.validator,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.exceptions"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.format"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jackson,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.format.common"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.format,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.format.draftv3"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.format,com.github.fge.jsonschema.format.helpers,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle,org.joda.time.format"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.format.extra"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.format,com.github.fge.jsonschema.format.helpers,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.format.helpers"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.format,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle,org.joda.time.format"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.digest"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.github.fge.jackson"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.digest.common"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.keyword.digest,com.github.fge.jsonschema.keyword.digest.helpers"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.digest.draftv3"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.keyword.digest,com.github.fge.jsonschema.keyword.digest.helpers"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.digest.draftv4"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.keyword.digest,com.github.fge.jsonschema.keyword.digest.helpers"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.digest.helpers"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.github.fge.jackson,com.github.fge.jsonschema.keyword.digest"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.validator"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.validator.common"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.keyword.validator,com.github.fge.jsonschema.keyword.validator.helpers,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.validator.draftv3"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.keyword.validator,com.github.fge.jsonschema.keyword.validator.helpers,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.validator.draftv4"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.keyword.validator,com.github.fge.jsonschema.keyword.validator.helpers,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.keyword.validator.helpers"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.node,com.github.fge.jackson,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.keyword.validator,com.github.fge.jsonschema.processors.data,com.github.fge.msgsimple.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.library"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge,com.github.fge.jackson,com.github.fge.jsonschema.core.keyword.syntax.checkers,com.github.fge.jsonschema.core.util,com.github.fge.jsonschema.format,com.github.fge.jsonschema.keyword.digest,com.github.fge.jsonschema.keyword.validator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.library.digest"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.util,com.github.fge.jsonschema.keyword.digest"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.library.format"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.util,com.github.fge.jsonschema.format"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.library.validator"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.util,com.github.fge.jsonschema.keyword.validator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.main"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge,com.github.fge.jsonschema.cfg,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.load.configuration,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.processors.data,com.github.fge.jsonschema.processors.syntax"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.main.cli"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.messages"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.msgsimple.bundle,com.github.fge.msgsimple.load"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.processors.build"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.util,com.github.fge.jsonschema.keyword.validator,com.github.fge.jsonschema.library,com.github.fge.jsonschema.processors.data"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.processors.data"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jackson,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.jsonschema.keyword.validator"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.processors.digest"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.util,com.github.fge.jsonschema.keyword.digest,com.github.fge.jsonschema.library,com.github.fge.jsonschema.processors.data"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.processors.format"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.github.fge.jsonschema.cfg,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.library,com.github.fge.jsonschema.processors.data"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.processors.syntax"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jsonschema.cfg,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.core.tree,com.github.fge.jsonschema.core.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.github.fge.jsonschema.processors.validation"/>
+      <attribute name="version" type="Version" value="2.2.6"/>
+      <attribute name="bundle-symbolic-name" value="com.github.fge.json-schema-validator"/>
+      <attribute name="bundle-version" type="Version" value="2.2.6"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,com.github.fge.jackson.jsonpointer,com.github.fge.jsonschema.cfg,com.github.fge.jsonschema.core.exceptions,com.github.fge.jsonschema.core.load,com.github.fge.jsonschema.core.processing,com.github.fge.jsonschema.core.report,com.github.fge.jsonschema.keyword.digest,com.github.fge.jsonschema.library,com.github.fge.jsonschema.processors.data,com.google.common.base"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.databind)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.databind.node)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jackson)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jackson.jsonpointer)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.exceptions)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.keyword.syntax)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.keyword.syntax.checkers)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.keyword.syntax.dictionaries)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.load)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.load.configuration)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.load.download)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.load.uri)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.messages)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.processing)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.ref)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.report)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.tree)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.tree.key)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.jsonschema.core.util)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.bundle)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.load)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.msgsimple.source)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.github.fge.uritemplate)(version&gt;=0.9.0)(!(version&gt;=1.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.collect)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.net)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.i18n.phonenumbers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.annotation)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=javax.mail.internet)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=joptsimple)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.joda.time)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.joda.time.format)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))"/>
     </requirement>
   </resource>
   <resource>
