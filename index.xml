@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1438321568837" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1441254743985" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -14518,36 +14518,374 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
-      <attribute name="osgi.identity" value="org.restlet.ext.atom"/>
+      <attribute name="osgi.identity" value="org.restlet.ext.apispark"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="5cea19087849dc877bc79cd6cfdd2f8631b4645c70b576a10782735d15a16c09"/>
+      <attribute name="osgi.content" value="3a27ed316c695af443e0212550e57c7d4c3578e630c08c9bb66f2ff3b4ce0c8f"/>
+      <attribute name="url" value="release/org.restlet.ext.apispark.jar"/>
+      <attribute name="size" type="Long" value="260482"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.engine.application,org.restlet.ext.apispark.internal,org.restlet,org.restlet.ext.apispark.internal.firewall.rule,org.restlet.routing,org.restlet.service,org.restlet.engine.util,org.restlet.ext.apispark.internal.agent,org.restlet.ext.apispark.internal.firewall.handler.policy,org.restlet.ext.apispark.internal.firewall.rule.policy,org.restlet.ext.apispark.internal.firewall.handler,org.restlet.ext.apispark.internal.model,org.restlet.ext.apispark.internal.utils,org.restlet.ext.apispark.internal.introspection.application,org.restlet.ext.apispark.internal.introspection.jaxrs,org.restlet.ext.apispark.internal.conversion.swagger.v1_2,org.restlet.engine,org.restlet.data,org.restlet.ext.apispark.internal.conversion,javax.ws.rs.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.agent.module,org.restlet.ext.apispark.internal.utils,org.restlet.ext.apispark,org.restlet.ext.apispark.internal.agent.bean,org.restlet,org.restlet.ext.apispark.internal.firewall.rule,org.restlet.routing,org.restlet.ext.apispark.internal.firewall,org.restlet.engine.util,org.restlet.ext.apispark.internal.agent"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.agent"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal,org.restlet.data,org.restlet.resource,org.restlet.ext.apispark.internal.agent.bean,org.restlet,org.restlet.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.agent.bean"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.agent.module"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal,org.restlet.ext.apispark.internal.agent.bean,org.restlet.ext.apispark.internal.agent.resource,com.google.common.collect,org.restlet,com.google.common.util.concurrent,org.restlet.data,org.restlet.security,org.restlet.ext.apispark.internal.agent,org.restlet.routing,com.google.common.cache,org.restlet.resource,com.google.common.base,org.restlet.ext.apispark,org.restlet.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.agent.resource"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.resource,org.restlet.ext.apispark.internal.agent.bean"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.conversion"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.data,org.restlet.engine.util,com.fasterxml.jackson.databind,com.wordnik.swagger.util,org.restlet.ext.jackson,org.restlet.resource,org.restlet.representation,org.restlet"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.conversion.raml"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,org.restlet.ext.apispark.internal.model,org.restlet.ext.apispark.internal.utils,com.fasterxml.jackson.module.jsonSchema.types,org.restlet.ext.apispark.internal.introspection.util,com.fasterxml.jackson.core,org.raml.model.parameter,org.raml.model,org.restlet.data,org.restlet.ext.apispark.internal.conversion,com.fasterxml.jackson.module.jsonSchema,org.raml.parser.rule,org.restlet.engine.util,org.raml.parser.visitor"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.conversion.swagger.v1_2"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.model,org.restlet.data,org.restlet.engine.util,org.restlet.ext.apispark.internal.conversion,org.restlet.ext.apispark.internal.conversion.swagger.v1_2.model,com.fasterxml.jackson.databind,org.restlet.ext.apispark.internal.reflect,org.restlet.ext.apispark.internal.introspection.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.conversion.swagger.v1_2.model"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="com.fasterxml.jackson.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.conversion.swagger.v2_0"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="com.wordnik.swagger.models.parameters,org.restlet.ext.apispark.internal.model,com.wordnik.swagger.models.auth,org.restlet.data,com.wordnik.swagger.models.properties,com.wordnik.swagger.models,org.restlet.ext.apispark.internal.conversion,org.restlet.ext.apispark.internal.utils,org.restlet.ext.apispark.internal.introspection.util,org.restlet.engine.util,com.fasterxml.jackson.databind,com.wordnik.swagger.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.firewall"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.routing,org.restlet,org.restlet.ext.apispark.internal.firewall.rule"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.firewall.handler"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.firewall.handler.policy,org.restlet.data,org.restlet,org.restlet.ext.apispark.internal.firewall.rule,org.restlet.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.firewall.handler.policy"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet,org.restlet.data,org.restlet.security"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.firewall.rule"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.firewall.rule.counter,com.google.common.cache,org.restlet.ext.apispark.internal.firewall.rule.policy,org.restlet.ext.apispark.internal.firewall.handler,org.restlet,org.restlet.data,org.restlet.routing"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.firewall.rule.counter"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.firewall.rule,com.google.common.base,org.restlet"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.firewall.rule.policy"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet,org.restlet.data,org.restlet.security"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.introspection"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.model"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.introspection.application"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.routing,org.restlet.ext.apispark.internal.model,org.restlet.data,org.restlet.ext.apispark.internal.introspection,org.restlet.ext.apispark.internal.utils,org.restlet.engine.util,org.restlet.ext.apispark.internal.reflect,org.restlet,org.restlet.util,com.fasterxml.jackson.databind,org.restlet.ext.apispark,com.fasterxml.jackson.databind.introspect,org.restlet.ext.apispark.internal.introspection.util,org.restlet.engine,com.fasterxml.jackson.annotation,org.restlet.ext.apispark.internal.conversion,org.restlet.engine.application,org.restlet.resource,org.restlet.representation,org.restlet.service,org.restlet.engine.resource,org.restlet.security"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.introspection.helper"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.model,com.wordnik.swagger.annotations,org.restlet.ext.apispark.internal.introspection,com.google.common.base,com.google.common.collect,org.restlet.data,org.restlet.engine.util,org.restlet.ext.apispark.internal.introspection.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.introspection.jaxrs"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="javax.ws.rs,org.restlet.ext.apispark.internal.model,com.fasterxml.jackson.databind,org.restlet.ext.apispark.internal.utils,com.fasterxml.jackson.databind.introspect,org.restlet.ext.apispark.internal.reflect,org.restlet.ext.apispark.internal.introspection.util,org.restlet.data,org.restlet.ext.apispark.internal.introspection,com.fasterxml.jackson.annotation,org.restlet.engine.util,javax.ws.rs.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.introspection.util"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.representation,org.restlet.ext.apispark.internal.reflect"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.model"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="com.fasterxml.jackson.annotation,org.restlet.data"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.reflect"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.introspection.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.restlet.ext.apispark.internal.utils"/>
+      <attribute name="version" type="Version" value="0.0.0"/>
+      <attribute name="bundle-symbolic-name" value="org.restlet.ext.apispark"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.apispark.internal.model,org.restlet.ext.jackson,org.restlet.data,org.restlet.resource,org.restlet.ext.apispark.internal.introspection,org.restlet.representation,org.restlet,org.restlet.routing,org.restlet.service"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.annotation)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.databind)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.databind.introspect)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.module.jsonSchema)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.module.jsonSchema.types)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.common.base)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.common.cache)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.common.collect)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.google.common.util.concurrent)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.wordnik.swagger.annotations)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.wordnik.swagger.models)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.wordnik.swagger.models.auth)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.wordnik.swagger.models.parameters)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.wordnik.swagger.models.properties)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=com.wordnik.swagger.util)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.ws.rs.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.raml.model)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.raml.model.parameter)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.raml.parser.rule)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.raml.parser.visitor)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.data)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.engine)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.engine.application)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.engine.resource)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.engine.util)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.ext.jackson)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.representation)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.resource)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.routing)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.security)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.service)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.util)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.restlet.ext.atom"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="5f0539a75b07d3cac36b11510918de92625d1710d39743b8e9580c42c553f657"/>
       <attribute name="url" value="release/org.restlet.ext.atom.jar"/>
-      <attribute name="size" type="Long" value="56560"/>
+      <attribute name="size" type="Long" value="56559"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.atom"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.atom"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.atom"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.atom"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.restlet.ext.xml,org.restlet.ext.atom.internal,org.restlet,org.xml.sax,org.xml.sax.helpers,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.atom.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.atom"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.atom,org.xml.sax.helpers,org.xml.sax,org.restlet.ext.xml,org.restlet.engine.util,org.restlet.representation"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -14680,34 +15018,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.crypto"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="df79d4316f4d9d3598b7204f44c5460edad385e8c315043a45b73cc770990dbf"/>
+      <attribute name="osgi.content" value="0f7b51547d709d0265f2634e77897f0852c45bdf88aebf0d355915fc6ccb88a3"/>
       <attribute name="url" value="release/org.restlet.ext.crypto.jar"/>
-      <attribute name="size" type="Long" value="37044"/>
+      <attribute name="size" type="Long" value="37043"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.crypto"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.crypto"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.crypto"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.crypto"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.crypto.internal,org.restlet.security,org.restlet,org.restlet.engine.util,org.restlet.representation,org.restlet.util,javax.crypto.spec,javax.crypto"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.crypto.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.crypto"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.engine.io,org.restlet.engine.util,org.restlet,org.restlet.util,org.restlet.ext.crypto,org.restlet.security,javax.crypto.spec,javax.crypto,org.restlet.engine.security,org.restlet.engine.header"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -14762,34 +15100,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.e4"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="6d60986bbec64f438ad859de3bafbfad169a9fcca78403457f3aaa574f079481"/>
+      <attribute name="osgi.content" value="3bd1768471fc0f7c61e2ac0726185166e9da2678c25d4c26f5daa6a3d5d5c787"/>
       <attribute name="url" value="release/org.restlet.ext.e4.jar"/>
       <attribute name="size" type="Long" value="4126"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.e4"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.e4"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.e4"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.e4"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.eclipse.e4.core.contexts,org.restlet.resource,org.restlet.ext.e4.internal,org.osgi.framework,org.restlet"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.e4.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.e4"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.osgi.framework"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -14816,34 +15154,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.emf"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e852e7202ca7c0cc7c1f7afff5ba70d1a7530a0600d009126a5c1d0e1c418862"/>
+      <attribute name="osgi.content" value="23045758ddb392563295c42b28dc14a3493939a6fcaa63b9823546ee9d560b03"/>
       <attribute name="url" value="release/org.restlet.ext.emf.jar"/>
-      <attribute name="size" type="Long" value="9198"/>
+      <attribute name="size" type="Long" value="9195"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.emf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.emf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.emf"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.emf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.eclipse.emf.ecore,org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.eclipse.emf.ecore.resource,org.eclipse.emf.ecore.xmi.impl,org.restlet.ext.emf.internal,org.eclipse.emf.ecore.xmi,org.eclipse.emf.common.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.emf.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.emf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.eclipse.emf.ecore,org.eclipse.emf.common.util"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -14894,27 +15232,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.fileupload"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="fe5b48e958a76b57c8ec2938e168f15c6025fa1f3907d6297646fb8ed47d3170"/>
+      <attribute name="osgi.content" value="774424b39add63a780d7e4f8a18d6a0b685b879eaee26bd649b4533705822c6d"/>
       <attribute name="url" value="release/org.restlet.ext.fileupload.jar"/>
-      <attribute name="size" type="Long" value="2791"/>
+      <attribute name="size" type="Long" value="2789"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.fileupload"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.fileupload"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.fileupload"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.fileupload"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.apache.commons.fileupload,org.restlet.data,org.restlet.representation,org.restlet"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -14941,34 +15279,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.freemarker"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="35f3039e2a70a5f2a0488a50541c8d3c77221dad742242c020416d4ce00e651b"/>
+      <attribute name="osgi.content" value="0f1390f17741de438309e9731c553224a1a661898ec12272ddd0e912b9514279"/>
       <attribute name="url" value="release/org.restlet.ext.freemarker.jar"/>
-      <attribute name="size" type="Long" value="9789"/>
+      <attribute name="size" type="Long" value="9786"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.freemarker"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.freemarker"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.freemarker"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.freemarker"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="freemarker.cache,org.restlet.data,org.restlet.representation,org.restlet,org.restlet.resource,org.restlet.ext.freemarker.internal,org.restlet.util,org.restlet.engine.converter,org.restlet.engine.resource,freemarker.template,org.restlet.routing"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.freemarker.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.freemarker"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.util,freemarker.template"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15019,27 +15357,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.gson"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="890a29535723ca0cb7606de1f6d973bc9ff9eaac89a49f90dac5dc9e6e2102e4"/>
+      <attribute name="osgi.content" value="3ac0c5efd4b72e28588a3d1df75a5a8563c31c340fb82848dc5feb42c8db0f70"/>
       <attribute name="url" value="release/org.restlet.ext.gson.jar"/>
-      <attribute name="size" type="Long" value="7914"/>
+      <attribute name="size" type="Long" value="7911"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.gson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.gson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.gson"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.gson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.joda.time,com.google.gson,com.google.gson.stream"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15082,27 +15420,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.guice"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="a37b31705bdbd5db7e519acaa19b59785a89ecbc31f147c7c362432a327b32aa"/>
+      <attribute name="osgi.content" value="95bbf0ff2f0039b307894bac8a1deafc505850c9ee5bd94003573212b7ae178d"/>
       <attribute name="url" value="release/org.restlet.ext.guice.jar"/>
-      <attribute name="size" type="Long" value="15832"/>
+      <attribute name="size" type="Long" value="15831"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.guice"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.guice"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.guice"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.guice"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.resource,org.restlet,org.restlet.routing,javax.inject,com.google.inject,com.google.inject.binder"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15137,27 +15475,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.gwt"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="ef719dd00c277e71b25742b2a53329824044e0a9b7b6ea6052423818a9f41b9d"/>
+      <attribute name="osgi.content" value="7b13cbe666507ddbb3656ac3092350311334ec4566236fe1b2a851050f1f5c4e"/>
       <attribute name="url" value="release/org.restlet.ext.gwt.jar"/>
-      <attribute name="size" type="Long" value="7175"/>
+      <attribute name="size" type="Long" value="7172"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.gwt"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.gwt"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.gwt"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.gwt"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,com.google.gwt.user.client.rpc,com.google.gwt.user.server.rpc.impl,com.google.gwt.user.server.rpc,org.restlet.engine"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15204,34 +15542,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.html"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="8d78f0f4b7e1ad1c9a27efabe93ea6eea0809280cc9daefaaf46109e75785c3e"/>
+      <attribute name="osgi.content" value="bf72ca73965bdc6dada720576d52995c18266c0d698dc47a93532a875a7065c1"/>
       <attribute name="url" value="release/org.restlet.ext.html.jar"/>
-      <attribute name="size" type="Long" value="14058"/>
+      <attribute name="size" type="Long" value="14056"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.html"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.html"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.html"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.html"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.ext.html.internal,org.restlet.engine.util,org.restlet.engine.header,org.restlet.resource,org.restlet.engine.resource,org.restlet.engine.converter"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.html.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.html"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.html,org.restlet.representation,org.restlet,org.restlet.util"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15278,34 +15616,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.httpclient"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="dd66ac2328ce3813550e66ce6b839b0a2df859dbcc669dbbbcd3d99caa0b54c7"/>
+      <attribute name="osgi.content" value="e243c41c4fba34b044166d03935d8d359410b0486f14e4ed63af66629a528ccc"/>
       <attribute name="url" value="release/org.restlet.ext.httpclient.jar"/>
-      <attribute name="size" type="Long" value="18105"/>
+      <attribute name="size" type="Long" value="18103"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.httpclient"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.httpclient"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.httpclient"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.httpclient"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.apache.http.conn.params,org.apache.http.client,org.restlet.ext.httpclient.internal,org.restlet.engine,org.restlet.engine.adapter,org.apache.http.impl.client,org.apache.http.conn,org.apache.http.cookie,org.restlet.data,org.restlet.engine.util,javax.net.ssl,org.apache.http.conn.scheme,org.apache.http.params,org.apache.http.conn.ssl,org.restlet.util,org.restlet,org.apache.http.client.params,org.restlet.engine.ssl,org.apache.http.impl.conn.tsccm,org.apache.http"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.httpclient.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.httpclient"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.apache.http.conn,org.apache.http.client,org.apache.http.client.methods,org.restlet.ext.httpclient,org.apache.http,org.apache.http.message,org.restlet.data,org.apache.http.entity,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.engine.adapter,org.apache.http.cookie,org.apache.http.impl.cookie,org.apache.http.params"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15412,27 +15750,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jaas"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="578c62eec989453358f80f9c971e57fef48cc55180f9e2a41bce480834df695d"/>
+      <attribute name="osgi.content" value="7cc44e72c09014b2d3368ccdb486e3cd1f8cac6425a91341af9fe0e1393d1e9c"/>
       <attribute name="url" value="release/org.restlet.ext.jaas.jar"/>
-      <attribute name="size" type="Long" value="5295"/>
+      <attribute name="size" type="Long" value="5292"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jaas"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jaas"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaas"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaas"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.security.auth.callback,org.restlet.data,org.restlet,org.restlet.security,javax.security.auth,javax.security.auth.login"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15526,34 +15864,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jackson"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="ca6dac3ec51fb293e8ee05e4fd52c90ed2ad969f6e5fa8be432387399e38d976"/>
+      <attribute name="osgi.content" value="6df39dd33bc2852795203032015e1bca00d9d25f4d9030319b02a7acb2496cae"/>
       <attribute name="url" value="release/org.restlet.ext.jackson.jar"/>
-      <attribute name="size" type="Long" value="12247"/>
+      <attribute name="size" type="Long" value="12245"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jackson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jackson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jackson"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jackson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,com.fasterxml.jackson.databind,com.fasterxml.jackson.dataformat.yaml,org.restlet.ext.jackson.internal,com.fasterxml.jackson.core,com.fasterxml.jackson.dataformat.csv,javax.xml.stream,com.fasterxml.jackson.dataformat.xml,com.fasterxml.jackson.dataformat.smile"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jackson.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jackson"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.osgi.framework,org.codehaus.stax2.osgi,org.restlet,org.codehaus.stax2,javax.xml.stream"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15628,27 +15966,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.javamail"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="053d6c81aa20b02e3721395134e9e7a8c396658985d94632134b3912887e9cde"/>
+      <attribute name="osgi.content" value="27e01fb5b7df64ab15c4999c7e595e59da354cf67c5de2629ffba207b7ddb613"/>
       <attribute name="url" value="release/org.restlet.ext.javamail.jar"/>
-      <attribute name="size" type="Long" value="21016"/>
+      <attribute name="size" type="Long" value="21014"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.javamail"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.javamail"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.javamail"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.javamail"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.mail.internet,org.restlet.representation,org.restlet,org.restlet.util,org.w3c.dom,com.sun.mail.pop3,org.restlet.data,org.restlet.engine.connector,javax.mail,org.restlet.resource,org.restlet.engine.resource,org.restlet.engine.converter,org.restlet.ext.xml,org.restlet.engine.util,org.restlet.engine.header,org.restlet.routing"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15723,34 +16061,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jaxb"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="753d3a5ad4c1a1a9c23d4a77725538d1bdfe049cd1b41e434b52bf2a837d01a8"/>
+      <attribute name="osgi.content" value="9cc1431a981327a77208ae8028e11b43c06d4a71c2b0be85f21de67e7710cf78"/>
       <attribute name="url" value="release/org.restlet.ext.jaxb.jar"/>
-      <attribute name="size" type="Long" value="14333"/>
+      <attribute name="size" type="Long" value="14330"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jaxb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jaxb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxb"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.resource,javax.xml.bind.annotation,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.restlet,org.restlet.ext.jaxb.internal,javax.xml.bind.util,com.sun.xml.bind.marshaller,javax.xml.bind"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxb.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,com.sun.xml.bind.marshaller,org.restlet.ext.jaxb,org.restlet,javax.xml.bind,javax.xml.transform,javax.xml.parsers,javax.xml.transform.sax,org.xml.sax"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -15817,103 +16155,103 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jaxrs"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="2cb7ea27790ca111ced8317bcd9b71fbed052bd3b8c82eb422f4011fc0d1f68b"/>
+      <attribute name="osgi.content" value="cbc8e302f094d7c85f28e02f20b9cb89326d5b9bd1703b2704ba487d33ca3907"/>
       <attribute name="url" value="release/org.restlet.ext.jaxrs.jar"/>
-      <attribute name="size" type="Long" value="322167"/>
+      <attribute name="size" type="Long" value="328174"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="org.restlet.ext.jaxrs.internal.util,org.restlet.util,org.restlet.routing,org.restlet.ext.jaxrs.internal.todo,org.restlet.ext.jaxrs.internal.exceptions,javax.ws.rs.core,org.restlet.service,org.restlet.data,org.restlet,org.restlet.security,javax.ws.rs,org.restlet.resource,org.restlet.ext.jaxrs.internal.client,org.restlet.engine,org.restlet.ext.jaxrs.internal.wrappers,org.restlet.ext.jaxrs.internal.core,org.restlet.representation,javax.ws.rs.ext,org.restlet.ext.jaxrs.internal.spi,org.restlet.ext.jaxrs.internal.provider,org.restlet.ext.jaxrs.internal.wrappers.provider"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.ext.jaxrs.internal.util,org.restlet.util,org.restlet.routing,org.restlet.ext.jaxrs.internal.todo,org.restlet.ext.jaxrs.internal.exceptions,javax.ws.rs.core,org.restlet.service,org.restlet.data,org.restlet,org.restlet.security,javax.ws.rs,org.restlet.resource,org.restlet.engine.util,org.restlet.ext.jaxrs.internal.client,org.restlet.engine,org.restlet.ext.jaxrs.internal.wrappers,org.restlet.ext.jaxrs.internal.core,org.restlet.representation,javax.ws.rs.ext,org.restlet.ext.jaxrs.internal.spi,org.restlet.ext.jaxrs.internal.provider,org.restlet.ext.jaxrs.internal.wrappers.provider"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.client"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="org.restlet.data,org.restlet.engine.resource,javax.ws.rs,org.restlet.resource,org.restlet.representation,org.restlet.util,org.restlet,org.restlet.ext.jaxrs.internal.exceptions,org.apache.commons.lang,org.restlet.service,org.restlet.ext.jaxrs.internal.util"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.data,org.restlet.engine.resource,org.restlet.resource,org.restlet.representation,org.restlet,org.restlet.engine.application,javax.ws.rs,org.restlet.util,org.apache.commons.lang,org.restlet.service,org.restlet.ext.jaxrs.internal.util,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.core"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.ws.rs.core,org.restlet.ext.jaxrs.internal.todo,javax.ws.rs,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.ext.jaxrs,org.restlet.service,org.restlet.ext.jaxrs.internal.util,org.restlet.data,org.restlet.engine.util,org.restlet.security"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.exceptions"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.ws.rs,javax.ws.rs.core,org.restlet.data"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.provider"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="javax.ws.rs,javax.ws.rs.ext,javax.xml.bind,javax.ws.rs.core,org.restlet.engine.io,org.restlet.resource,org.restlet.representation,org.restlet,org.restlet.service,org.restlet.data,javax.activation,javax.mail.util,org.apache.commons.fileupload,org.restlet.ext.jaxrs.internal.util,org.restlet.ext.jaxrs.internal.exceptions,javax.xml.transform,javax.xml.transform.stream,javax.xml.parsers,org.xml.sax,javax.xml.bind.annotation,javax.xml.transform.sax,org.json,javax.mail.internet,javax.mail,org.restlet.ext.jaxrs,org.restlet.ext.jaxrs.internal.wrappers.provider,org.restlet.ext.jaxrs.internal.core,org.restlet.util"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="javax.ws.rs,javax.ws.rs.ext,javax.xml.bind,javax.ws.rs.core,org.restlet.engine.io,org.restlet.resource,org.restlet.representation,org.restlet,org.restlet.service,org.restlet.data,javax.activation,javax.mail.util,org.apache.commons.fileupload,org.restlet.ext.jaxrs.internal.util,org.restlet.ext.jaxrs.internal.exceptions,javax.xml.transform,javax.xml.transform.stream,javax.xml.parsers,org.xml.sax,javax.xml.bind.annotation,javax.xml.transform.sax,org.json,javax.mail.internet,javax.mail,org.simpleframework.xml,org.simpleframework.xml.core,org.restlet.ext.jaxrs,org.restlet.ext.jaxrs.internal.wrappers.provider,org.restlet.ext.jaxrs.internal.core,org.restlet.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.resteasy"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.jboss.resteasy.specimpl,org.jboss.resteasy.spi,org.restlet.representation,org.jboss.resteasy.plugins.server,org.restlet.util,org.restlet,org.jboss.resteasy.core,org.restlet.data,javax.ws.rs.core"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.spi"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.jaxrs.internal.util,javax.ws.rs.ext,org.restlet.engine.header,javax.ws.rs.core,org.restlet.data,org.restlet.engine.util,org.restlet.ext.jaxrs.internal.core"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.todo"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.util"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.jaxrs.internal.wrappers,org.restlet.ext.jaxrs.internal.core,org.restlet.data,org.restlet.engine.util,org.restlet.representation,org.restlet.util,javax.ws.rs.core,javax.ws.rs,org.restlet,org.restlet.ext.jaxrs,org.restlet.ext.jaxrs.internal.exceptions,org.restlet.ext.jaxrs.internal.wrappers.provider,org.restlet.ext.jaxrs.internal.todo,javax.ws.rs.ext,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.wrappers"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.jaxrs.internal.util,org.restlet.ext.jaxrs.internal.exceptions,org.restlet.ext.jaxrs.internal.core,javax.ws.rs,org.restlet.ext.jaxrs.internal.wrappers.params,org.restlet.ext.jaxrs.internal.wrappers.provider,org.restlet.ext.jaxrs,org.restlet.data,org.restlet.engine.util,org.restlet,javax.ws.rs.core,javax.ws.rs.ext,org.restlet.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.wrappers.params"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.jaxrs.internal.util,org.restlet.ext.jaxrs.internal.exceptions,org.restlet.ext.jaxrs.internal.core,javax.ws.rs.core,org.restlet.ext.jaxrs.internal.todo,org.restlet,org.restlet.ext.jaxrs,javax.ws.rs.ext,org.restlet.ext.jaxrs.internal.wrappers,org.restlet.ext.jaxrs.internal.wrappers.provider,javax.ws.rs,org.restlet.representation,org.restlet.data,org.restlet.util,org.restlet.resource,org.apache.commons.lang,org.restlet.engine.converter,org.restlet.engine.resource,org.apache.commons.lang.reflect"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jaxrs.internal.wrappers.provider"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jaxrs"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.jaxrs.internal.util,org.restlet.ext.jaxrs.internal.core,javax.ws.rs,org.restlet.ext.jaxrs.internal.wrappers,org.restlet.data,org.restlet.ext.jaxrs.internal.wrappers.params,javax.ws.rs.ext,org.restlet.ext.jaxrs.internal.exceptions,javax.ws.rs.core,org.restlet.service,org.restlet,org.restlet.ext.jaxrs,org.restlet.engine.util"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -16013,6 +16351,10 @@
       <directive name="resolution" value="optional"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.engine.application)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.restlet.engine.converter)"/>
       <directive name="resolution" value="optional"/>
     </requirement>
@@ -16057,6 +16399,14 @@
       <directive name="resolution" value="optional"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.simpleframework.xml)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.simpleframework.xml.core)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
       <directive name="resolution" value="optional"/>
     </requirement>
@@ -16068,34 +16418,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jdbc"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="707bf7f25ed1f4984585dcddc2d800c430199838e457bd877b865d4cf07940be"/>
+      <attribute name="osgi.content" value="9b4530b64e6aa6e3a61339d9674923b8cdabcdc31ac80a39a881a3eb331f9d11"/>
       <attribute name="url" value="release/org.restlet.ext.jdbc.jar"/>
-      <attribute name="size" type="Long" value="12098"/>
+      <attribute name="size" type="Long" value="12096"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jdbc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jdbc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jdbc"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jdbc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.apache.commons.pool.impl,org.apache.commons.pool,javax.xml.parsers,org.restlet.representation,org.restlet,org.restlet.ext.jdbc.internal,org.w3c.dom,org.xml.sax,org.apache.commons.dbcp,org.restlet.data,org.restlet.engine.connector,org.restlet.resource,org.restlet.engine.resource,org.restlet.engine.converter,javax.sql.rowset"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jdbc.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jdbc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.apache.commons.dbcp,org.restlet.ext.jdbc,org.apache.commons.pool"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -16288,35 +16638,35 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jetty"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="2afd592d40276053cdf39d1728396649163d1e36cb89be92eff1b51a5ff413d7"/>
+      <attribute name="osgi.content" value="bdfa4e706d0941ce7ee558a075b15db262f0a164118de694fad39a84823f4189"/>
       <attribute name="url" value="release/org.restlet.ext.jetty.jar"/>
-      <attribute name="size" type="Long" value="22859"/>
+      <attribute name="size" type="Long" value="22987"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jetty"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jetty"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jetty"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jetty"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.eclipse.jetty.client,org.restlet.ext.jetty.internal,org.eclipse.jetty.http,org.restlet.util,org.restlet,org.restlet.engine,org.restlet.engine.adapter,org.restlet.data,org.eclipse.jetty.util.thread,org.restlet.engine.util,org.restlet.engine.ssl,org.eclipse.jetty.util.ssl,org.eclipse.jetty.server,javax.servlet,org.eclipse.jetty.io,org.eclipse.jetty.spdy.server.http,org.eclipse.jetty.spdy.server"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jetty.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jetty"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="org.eclipse.jetty.client,org.eclipse.jetty.http,org.eclipse.jetty.client.util,org.eclipse.jetty.client.api,org.restlet.representation,org.restlet.ext.jetty,org.restlet,org.restlet.util,org.restlet.engine.adapter,org.restlet.data,org.eclipse.jetty.server,javax.servlet,org.eclipse.jetty.server.handler,javax.servlet.http,org.eclipse.jetty.io,org.restlet.engine.ssl,javax.net.ssl,org.eclipse.jetty.util.ssl"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.eclipse.jetty.client,org.eclipse.jetty.http,org.eclipse.jetty.client.api,org.eclipse.jetty.client.util,org.restlet.ext.jetty,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.engine.adapter,org.restlet.data,org.eclipse.jetty.server,javax.servlet,org.eclipse.jetty.server.handler,javax.servlet.http,org.eclipse.jetty.io,org.restlet.engine.ssl,javax.net.ssl,org.eclipse.jetty.util.ssl"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
@@ -16414,27 +16764,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jibx"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="8a3eca95277956a01b16ec2a162231c8a6a2396d062aaa10749526408e13814c"/>
+      <attribute name="osgi.content" value="fb4abc1b752f12fb11ea60b0b152a893836dfd2db91ec2133d32687dc5ea7d72"/>
       <attribute name="url" value="release/org.restlet.ext.jibx.jar"/>
       <attribute name="size" type="Long" value="6501"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jibx"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jibx"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jibx"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jibx"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.jibx.runtime,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -16524,28 +16874,28 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.json"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="214551b04f91fb138155a773e6842dbaf4a1952814b183c7d95989aa31c383af"/>
+      <attribute name="osgi.content" value="6c3fc643b4d6a86c0acd600672231bfa7c7011099e6c522f446da3a43f042345"/>
       <attribute name="url" value="release/org.restlet.ext.json.jar"/>
-      <attribute name="size" type="Long" value="9099"/>
+      <attribute name="size" type="Long" value="8841"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.json"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.json"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.json"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.json"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="org.restlet.data,org.restlet.resource,org.json,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.restlet.routing,org.restlet,org.restlet.engine.io,org.restlet.util"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.data,org.restlet.resource,org.json,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,org.restlet.routing,org.restlet,org.restlet.engine.io"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.json)"/>
@@ -16583,10 +16933,6 @@
       <directive name="filter" value="(osgi.wiring.package=org.restlet.routing)"/>
       <directive name="resolution" value="optional"/>
     </requirement>
-    <requirement namespace="osgi.wiring.package">
-      <directive name="filter" value="(osgi.wiring.package=org.restlet.util)"/>
-      <directive name="resolution" value="optional"/>
-    </requirement>
     <requirement namespace="osgi.ee">
       <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
     </requirement>
@@ -16595,27 +16941,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.jsslutils"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="86979a11cc9b728db8c8ee4ff0f89fbe561d7760c3f7aea2e12184b151ed629c"/>
+      <attribute name="osgi.content" value="83abc2f411d11ed744ef39f3281c48ea0b71693c872ecbfae418a45338e9367f"/>
       <attribute name="url" value="release/org.restlet.ext.jsslutils.jar"/>
-      <attribute name="size" type="Long" value="4657"/>
+      <attribute name="size" type="Long" value="4656"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.jsslutils"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.jsslutils"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.jsslutils"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.jsslutils"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.jsslutils.sslcontext,org.restlet.data,javax.net.ssl,org.restlet.util,org.restlet.engine.ssl,javax.security.auth.callback,org.jsslutils.sslcontext.keymanagers,org.jsslutils.keystores"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -16658,34 +17004,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.lucene"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="e882c6b7e83cb9b828c0551f069264abb21fa84286120464e0877a8c64154109"/>
+      <attribute name="osgi.content" value="27b7bdbdfcbe7da3354ef5c8ce6dabaa781fe5f30bd29bc079d412cc3cdc56bb"/>
       <attribute name="url" value="release/org.restlet.ext.lucene.jar"/>
-      <attribute name="size" type="Long" value="10930"/>
+      <attribute name="size" type="Long" value="10928"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.lucene"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.lucene"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.lucene"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.lucene"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.representation,org.restlet.util,org.restlet,org.apache.solr.request,org.restlet.data,org.apache.solr.core,org.restlet.ext.lucene.internal,org.restlet.engine.connector,org.apache.solr.response,org.apache.solr.handler.admin,org.restlet.ext.xml,org.xml.sax,org.apache.tika.metadata,org.apache.tika.parser,org.apache.tika.config,org.restlet.engine.util,org.apache.tika.exception"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.lucene.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.lucene"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.representation,org.apache.solr.response,org.apache.solr.request,org.apache.solr.common.util,org.apache.solr.common.params,org.restlet,org.apache.solr.core"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -16768,82 +17114,82 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.nio"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="586b67f9d3c7cbf9f1a18d1e41f0cccddefbfcd486f3188c8d3cfe2e0b8438e3"/>
+      <attribute name="osgi.content" value="0c004921d391518ded23716ae0dcc5b280b007921f0f16d0d15774c8b40b7492"/>
       <attribute name="url" value="release/org.restlet.ext.nio.jar"/>
-      <attribute name="size" type="Long" value="140415"/>
+      <attribute name="size" type="Long" value="140413"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet,org.restlet.engine,org.restlet.ext.nio.internal.controller,org.restlet.data,org.restlet.engine.log,org.restlet.util,org.restlet.engine.connector,org.restlet.ext.nio.internal.state,org.restlet.ext.nio.internal.connection,org.restlet.ext.nio.internal.way,org.restlet.routing,org.restlet.ext.nio.internal.request,org.restlet.engine.ssl,javax.net.ssl"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.buffer"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.nio.internal.util,org.restlet,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.channel"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.io,org.restlet.ext.nio.internal.buffer,org.restlet.util,org.restlet,org.restlet.ext.nio.internal.util,org.restlet.ext.nio.internal.state,org.restlet.engine.util,org.restlet.ext.nio,org.restlet.ext.nio.internal.connection,org.restlet.ext.nio.internal.way,javax.net.ssl"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.connection"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.nio.internal.channel,org.restlet.engine.io,org.restlet.util,org.restlet.ext.nio.internal.state,org.restlet.ext.nio.internal.controller,org.restlet.ext.nio,org.restlet.ext.nio.internal.way,org.restlet,org.restlet.data,org.restlet.ext.nio.internal.buffer,org.restlet.engine.util,javax.net.ssl,org.restlet.engine.ssl"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.controller"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.nio.internal.state,org.restlet.ext.nio,org.restlet.ext.nio.internal.connection,org.restlet.engine.io,org.restlet,org.restlet.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.request"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.nio,org.restlet.ext.nio.internal.connection,org.restlet.ext.nio.internal.way,org.restlet,org.restlet.util,org.restlet.engine.security,org.restlet.data,org.restlet.engine.util,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.state"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.util"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.nio.internal.channel,org.restlet.engine.io"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.nio.internal.way"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.nio"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.nio.internal.state,org.restlet.ext.nio,org.restlet.ext.nio.internal.connection,org.restlet.representation,org.restlet.util,org.restlet,org.restlet.data,org.restlet.engine.header,org.restlet.engine.util,javax.net.ssl,org.restlet.ext.nio.internal.buffer,org.restlet.ext.nio.internal.util,org.restlet.ext.nio.internal.controller,org.restlet.ext.nio.internal.channel,org.restlet.engine.io,org.restlet.service,org.restlet.engine.connector,org.restlet.ext.nio.internal.request,org.restlet.routing"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -16914,41 +17260,41 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.oauth"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="326dcadeff0adf5b69dc90e73000d0ad559b583f2dc00c19af320f630d0324c9"/>
+      <attribute name="osgi.content" value="9cbc64ddb7410b1a0af534af7db1acff84730f69132ba99efef17313265d532a"/>
       <attribute name="url" value="release/org.restlet.ext.oauth.jar"/>
-      <attribute name="size" type="Long" value="74302"/>
+      <attribute name="size" type="Long" value="74303"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.oauth"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.oauth"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.oauth"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.oauth"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.json,org.restlet.ext.oauth.internal,org.restlet.data,org.restlet.resource,org.restlet.representation,org.restlet.ext.json,org.restlet,javax.naming,org.restlet.security,org.restlet.ext.freemarker,freemarker.cache,freemarker.template,org.restlet.util,org.restlet.routing,org.restlet.engine.security,org.restlet.engine.header,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.oauth.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.oauth"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.oauth,org.restlet.engine.util,javax.crypto.spec,javax.crypto,org.restlet.ext.crypto,javax.naming,org.restlet.security"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.oauth.internal.memory"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.oauth"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.oauth,org.restlet.ext.oauth.internal"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17035,55 +17381,55 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.odata"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="5076167f1fe82fed81172701be2159749af9dcfa7c7dd415bb8fa787a2e720ac"/>
+      <attribute name="osgi.content" value="1ea3de786d5b6fc27518b2e507ba39677e6f68aa656c3eac62d15499478fc416"/>
       <attribute name="url" value="release/org.restlet.ext.odata.jar"/>
-      <attribute name="size" type="Long" value="90515"/>
+      <attribute name="size" type="Long" value="90512"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.odata"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.freemarker,org.restlet.ext.odata.internal.reflect,org.restlet.data,org.restlet.resource,org.restlet.representation,freemarker.template,org.restlet.ext.odata.internal.edm,org.restlet.routing,org.restlet.ext.odata.internal,org.restlet.ext.atom,org.restlet,org.restlet.util,org.restlet.ext.xml,org.xml.sax.helpers,org.xml.sax,org.w3c.dom,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.odata.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.odata.internal.reflect,org.restlet.data,org.restlet.ext.atom,org.restlet,org.xml.sax,org.restlet.ext.odata.internal.edm,org.restlet.ext.odata"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.odata.internal.edm"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.xml,org.restlet.representation,org.xml.sax,org.xml.sax.helpers,org.restlet.ext.odata.internal.reflect,org.restlet.engine.util,org.restlet"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.odata.internal.reflect"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.atom,org.restlet,org.restlet.ext.odata.internal.edm"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.odata.internal.templates"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.odata"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=freemarker.template)"/>
@@ -17153,34 +17499,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.openid"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="35d21e18a66c2cc6ee00b5d8b230ed82cf633093896de6ed5b7f56b94836710d"/>
+      <attribute name="osgi.content" value="43571b8c33cdeb9f4a026bb3e856f93e62293c6994bc6f4c3ef2161620e4ab47"/>
       <attribute name="url" value="release/org.restlet.ext.openid.jar"/>
-      <attribute name="size" type="Long" value="27293"/>
+      <attribute name="size" type="Long" value="27291"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.openid"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.openid"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.openid"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.openid"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.engine.util,org.restlet.resource,org.restlet.ext.xml,org.restlet.representation,org.restlet,org.restlet.util,org.w3c.dom,org.restlet.ext.openid.internal,org.openid4java.discovery,org.restlet.security,org.openid4java.message.ax,org.openid4java.message,org.restlet.engine,org.openid4java.consumer"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.openid.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.openid"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.security,org.restlet.ext.openid,org.openid4java.message.ax,org.openid4java.message,org.openid4java.server,org.restlet,org.restlet.engine,org.restlet.data,org.restlet.ext.xml,org.restlet.util,org.w3c.dom"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17251,34 +17597,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.osgi"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="c111c53f24c36d41ad853e7f0e488f8e17bdc147df74fbdf0072c29fec8eda8f"/>
+      <attribute name="osgi.content" value="066e3b35d9676fdc6bdbb0578b4a415d16a6b128ee59f8a83243e5b26268af7b"/>
       <attribute name="url" value="release/org.restlet.ext.osgi.jar"/>
       <attribute name="size" type="Long" value="17855"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.osgi"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.osgi"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.osgi"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.osgi"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet,org.osgi.service.http,org.osgi.service.component,org.restlet.resource,org.restlet.routing,org.osgi.service.log,org.osgi.framework,org.restlet.service,org.restlet.data,org.restlet.representation,org.restlet.engine.local"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.osgi.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.osgi"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.osgi,org.osgi.framework"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17333,27 +17679,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.raml"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="b7b63ed8ba964a9d969a7ba36e0183e939f1d2aa11d14570b7d7c16d94acb6bf"/>
+      <attribute name="osgi.content" value="ce9d316dd10c06ee0f6a7544b77d5ae9c9b35bf7b0407a5b8a5baecb0ecb833c"/>
       <attribute name="url" value="release/org.restlet.ext.raml.jar"/>
       <attribute name="size" type="Long" value="4704"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.raml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.raml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.raml"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.raml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.routing,org.restlet.util,org.restlet,org.raml.emitter,org.restlet.ext.apispark.internal.model,org.raml.model,org.restlet.data,org.restlet.ext.apispark.internal.introspection.application,org.restlet.ext.apispark.internal.conversion.raml,org.restlet.representation"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17404,62 +17750,62 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.rdf"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="0a2bef4a332cc77fd0f1318bb558187edebe2aa4973f489ed93f35daf7abdd6f"/>
+      <attribute name="osgi.content" value="36949fcf9845c09062533b09d14b8e5741291b59addbce1c864789ecffd1afd8"/>
       <attribute name="url" value="release/org.restlet.ext.rdf.jar"/>
-      <attribute name="size" type="Long" value="64258"/>
+      <attribute name="size" type="Long" value="64257"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rdf"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.util,org.restlet.data,org.restlet.representation,org.restlet.resource,org.restlet,org.restlet.engine.resource,org.restlet.engine.converter,org.restlet.ext.rdf.internal.turtle,org.restlet.ext.rdf.internal.ntriples,org.restlet.ext.rdf.internal.n3,org.restlet.ext.rdf.internal.xml"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rdf.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.representation,org.restlet.ext.rdf"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rdf.internal.n3"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.rdf.internal.turtle,org.restlet,org.restlet.data,org.restlet.ext.rdf.internal,org.restlet.representation,org.restlet.ext.rdf"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rdf.internal.ntriples"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.rdf.internal,org.restlet.engine.io,org.restlet.representation,org.restlet.ext.rdf,org.restlet"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rdf.internal.turtle"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet,org.restlet.ext.rdf,org.restlet.ext.rdf.internal,org.restlet.ext.rdf.internal.ntriples,org.restlet.representation"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rdf.internal.xml"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rdf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.rdf.internal,org.restlet.representation,org.restlet,org.restlet.ext.rdf,org.xml.sax.helpers,org.xml.sax,org.restlet.ext.xml"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17514,27 +17860,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.rome"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="b42dc3f13c8a65ec5b54fce4ad37bf60ebc51ee63b222519557c79693a9b9228"/>
+      <attribute name="osgi.content" value="21fdb825a51410a75eaddb5b606e34c4e5ee059435b3d35306a7bec95fdf8aa1"/>
       <attribute name="url" value="release/org.restlet.ext.rome.jar"/>
-      <attribute name="size" type="Long" value="5729"/>
+      <attribute name="size" type="Long" value="5728"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.rome"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.rome"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.rome"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.rome"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="com.sun.syndication.feed.synd,org.restlet.data,org.restlet.resource,org.restlet.engine.resource,org.restlet.representation,org.restlet.engine.converter,com.sun.syndication.io,org.xml.sax"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17577,34 +17923,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.sdc"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="5e69b31efa8493fa6c7d76477f4189e95b191b58b123239cc9c5d1a136b9de57"/>
+      <attribute name="osgi.content" value="c3ea61f29967e7ab2912e9a8671b5e83e5085bce7ec36a54021eaa0d03af8f07"/>
       <attribute name="url" value="release/org.restlet.ext.sdc.jar"/>
-      <attribute name="size" type="Long" value="17365"/>
+      <attribute name="size" type="Long" value="17362"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.sdc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.sdc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.sdc"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.sdc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.sdc.internal,javax.net.ssl,org.restlet.engine.ssl,org.restlet.engine,org.restlet.data,org.restlet.engine.io,org.restlet.engine.util,org.restlet,org.restlet.util,org.restlet.engine.adapter"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.sdc.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.sdc"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.engine.security,org.restlet.ext.sdc,org.restlet.representation,org.restlet.util,org.restlet,com.google.protobuf,org.restlet.engine.adapter,com.google.dataconnector.protocol.proto,org.restlet.service,org.restlet.engine.io,org.restlet.engine.connector,com.google.dataconnector.protocol,com.google.dataconnector.util,javax.net.ssl"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17777,41 +18123,41 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.servlet"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="46ce9677975a5c025a49b76cdc4879de0b08fa39a68f4552af9dad2829f4ffdf"/>
+      <attribute name="osgi.content" value="fc292306c911e17e72a8146bc30dfba51be7be1234ba86f8d297f8a9631f262b"/>
       <attribute name="url" value="release/org.restlet.ext.servlet.jar"/>
-      <attribute name="size" type="Long" value="26363"/>
+      <attribute name="size" type="Long" value="26361"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.servlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.servlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.servlet"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.servlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.servlet,org.restlet.ext.osgi,org.restlet,org.osgi.service.log,org.osgi.service.http,org.restlet.representation,org.restlet.ext.servlet.internal,org.restlet.util,org.restlet.engine,org.restlet.engine.adapter,org.restlet.routing,org.restlet.service,org.restlet.data,org.restlet.engine.component,javax.servlet.http"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.servlet.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.servlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.servlet,org.restlet.data,org.restlet.engine.io,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.engine.adapter,javax.servlet.http,org.restlet.engine.connector,org.restlet.service,org.restlet.engine.local"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="OSGI-INF"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.servlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
@@ -17909,34 +18255,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.simple"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="15fbb2ac800d53428721363c576cc92a7fb087676b893cce3dd34aed19354866"/>
+      <attribute name="osgi.content" value="cde6e2d7bc06e3f34afeb3ee57c7e4fe56f4d5a9a9b98b917f4a306daa2452f2"/>
       <attribute name="url" value="release/org.restlet.ext.simple.jar"/>
-      <attribute name="size" type="Long" value="12417"/>
+      <attribute name="size" type="Long" value="12416"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.simple"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.simple"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.simple"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.simple"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.simpleframework.http.core,org.restlet.data,org.simpleframework.transport,org.restlet,org.simpleframework.transport.connect,org.restlet.ext.simple.internal,org.restlet.engine,org.restlet.engine.ssl,javax.net.ssl,org.restlet.util,org.restlet.engine.adapter"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.simple.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.simple"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.representation,org.restlet,org.restlet.util,org.restlet.engine.adapter,org.restlet.data,javax.net.ssl,org.restlet.engine.ssl,org.simpleframework.http,org.simpleframework.http.core,org.restlet.ext.simple,org.simpleframework.transport"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -17995,34 +18341,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.sip"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="b278ee32ff910092a21fcf4a9d0e54d864bd35dc513aa0c64466987ec0fd07d8"/>
+      <attribute name="osgi.content" value="2b75f8d5a70c8d0db05d714c1fee01ca5128258022fbeb797698c9deeb81e092"/>
       <attribute name="url" value="release/org.restlet.ext.sip.jar"/>
       <attribute name="size" type="Long" value="87012"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.sip"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.sip"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.sip"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.sip"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.connector,org.restlet.ext.sip.internal,org.restlet.data,org.restlet.util,org.restlet.resource,org.restlet.representation,org.restlet"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.sip.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.sip"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.ext.sip,org.restlet.util,org.restlet.engine.header,org.restlet.ext.nio,org.restlet.ext.nio.internal.connection,org.restlet.ext.nio.internal.way,org.restlet,org.restlet.ext.nio.internal.state,org.restlet.engine.security,org.restlet.ext.nio.internal.request,org.restlet.engine.util,org.restlet.engine.connector"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -18128,27 +18474,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.slf4j"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="38a018bdac6069845b470098a54893d2a48a3defcb424808b0f84265464bd2e4"/>
+      <attribute name="osgi.content" value="b7342af977abec089d387d5a759322d9a6bfdf084c4dcc88f989e62d7af7fa3e"/>
       <attribute name="url" value="release/org.restlet.ext.slf4j.jar"/>
-      <attribute name="size" type="Long" value="3721"/>
+      <attribute name="size" type="Long" value="3720"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.slf4j"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.slf4j"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.slf4j"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.slf4j"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.slf4j,org.restlet.engine.log"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -18167,27 +18513,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.spring"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="ccb655df6b9ce3a5a6909c24b285fa7fe93ff94fea49ee5c7442a4c50a8fbe20"/>
+      <attribute name="osgi.content" value="e65b9612ee70008172d277ab4bc3bd71aeef9ad51a6bdc964807e4c32c2a26d8"/>
       <attribute name="url" value="release/org.restlet.ext.spring.jar"/>
-      <attribute name="size" type="Long" value="17794"/>
+      <attribute name="size" type="Long" value="17791"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.spring"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.spring"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.spring"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.spring"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.servlet,org.springframework.web.servlet,org.springframework.beans,org.restlet.ext.servlet,org.restlet,org.springframework.web.context,javax.servlet.http,org.restlet.routing,org.restlet.resource,org.springframework.context,org.springframework.beans.factory,org.springframework.beans.factory.config,org.restlet.data,org.restlet.util,org.springframework.beans.factory.support,org.springframework.context.support,org.springframework.core.io,org.restlet.representation,org.springframework.beans.factory.xml,org.restlet.engine.util,org.restlet.engine,org.springframework.web.context.support"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -18286,28 +18632,28 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.swagger"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="90c0f0282a006c66b01445ca4e4653e2281f24e8a3e51cfef1b7ac2f66146456"/>
+      <attribute name="osgi.content" value="0a8a8607f4768e496abf446ed340946f220a57c08e9cd8065d6dee89174c37c6"/>
       <attribute name="url" value="release/org.restlet.ext.swagger.jar"/>
-      <attribute name="size" type="Long" value="12090"/>
+      <attribute name="size" type="Long" value="12234"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.swagger"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.swagger"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.swagger"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.swagger"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="com.fasterxml.jackson.databind,org.restlet.ext.apispark.internal.model,org.restlet.ext.apispark.internal.introspection.jaxrs,org.restlet.representation,com.wordnik.swagger.models,org.restlet,org.restlet.ext.apispark.internal.conversion.swagger.v2_0,org.restlet.routing,org.restlet.data,org.restlet.ext.jackson,com.fasterxml.jackson.annotation,javax.ws.rs.core,org.restlet.ext.apispark.internal.conversion.swagger.v1_2,org.restlet.ext.apispark.internal.conversion.swagger.v1_2.model,org.restlet.ext.apispark.internal.introspection.application,org.restlet.util"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="com.fasterxml.jackson.databind,org.restlet.ext.apispark.internal.model,org.restlet.ext.apispark.internal.introspection.jaxrs,org.restlet.representation,com.wordnik.swagger.models,org.restlet,org.restlet.ext.apispark.internal.conversion.swagger.v2_0,org.restlet.routing,org.restlet.data,org.restlet.ext.jackson,com.fasterxml.jackson.annotation,javax.ws.rs.core,org.restlet.ext.apispark.internal.conversion.swagger.v1_2,org.restlet.ext.apispark.internal.conversion.swagger.v1_2.model,org.restlet.ext.apispark.internal.introspection.application,org.restlet.ext.apispark.internal.introspection,org.restlet.util"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=com.fasterxml.jackson.annotation)"/>
@@ -18346,6 +18692,10 @@
       <directive name="resolution" value="optional"/>
     </requirement>
     <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.restlet.ext.apispark.internal.introspection)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.restlet.ext.apispark.internal.introspection.application)"/>
       <directive name="resolution" value="optional"/>
     </requirement>
@@ -18381,27 +18731,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.thymeleaf"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="cd3f485ace00b3b888233a989d334027539d50fa956c7fa4e3b0ec7856dfd023"/>
+      <attribute name="osgi.content" value="8e018eb0a423002449c0b7ad0a8f79a83456362cd08f9671bfacfe203d5f5453"/>
       <attribute name="url" value="release/org.restlet.ext.thymeleaf.jar"/>
-      <attribute name="size" type="Long" value="9468"/>
+      <attribute name="size" type="Long" value="9465"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.thymeleaf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.thymeleaf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.thymeleaf"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.thymeleaf"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.routing,org.restlet.data,org.restlet.representation,org.restlet,org.restlet.util,org.thymeleaf.context,org.thymeleaf.util,org.thymeleaf.templateresolver,org.thymeleaf,org.restlet.resource,org.restlet.engine.resource,org.restlet.engine.converter"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -18460,27 +18810,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.velocity"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="0da38e315ab25c92fbbb0b0efc744784b0279d10a9fd157b820fc6dfe3c4dc54"/>
+      <attribute name="osgi.content" value="41286df01102c31ad97ae1147b39a27683a8c2aa520078523c4b5ff58a15220e"/>
       <attribute name="url" value="release/org.restlet.ext.velocity.jar"/>
-      <attribute name="size" type="Long" value="10290"/>
+      <attribute name="size" type="Long" value="10287"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.velocity"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.velocity"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.velocity"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.velocity"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.apache.commons.collections,org.apache.velocity.exception,org.restlet.representation,org.apache.velocity.runtime.resource,org.apache.velocity.runtime.resource.loader,org.restlet.routing,org.restlet.data,org.restlet,org.restlet.util,org.apache.velocity.context,org.apache.velocity.runtime,org.apache.velocity,org.apache.velocity.app,org.restlet.resource,org.restlet.engine.resource,org.restlet.engine.converter"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -18658,27 +19008,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.wadl"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="13b91d65ffc1e46ef971f4c3154e8a0bd5372879a423c4fb3e6841ce896cc351"/>
+      <attribute name="osgi.content" value="433b55bf44e473372d2b35084be0d5960c5a13a1b328c49f6e1506b554efea0d"/>
       <attribute name="url" value="release/org.restlet.ext.wadl.jar"/>
-      <attribute name="size" type="Long" value="71077"/>
+      <attribute name="size" type="Long" value="71074"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.wadl"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.wadl"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.wadl"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.wadl"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.ext.xml,org.xml.sax,org.restlet.data,org.restlet,org.xml.sax.helpers,org.w3c.dom,org.restlet.ext.e4,org.eclipse.e4.core.contexts,org.restlet.resource,org.restlet.service,org.restlet.representation,org.restlet.engine.resource,org.restlet.routing,org.restlet.util,org.restlet.engine,org.restlet.engine.converter,org.xml.sax.ext,javax.xml.transform.sax"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -18761,47 +19111,47 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.xdb"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="beac03532262808eabaff5ed48dfb278ea803127fa6a0e6c52be3630fd53eefd"/>
+      <attribute name="osgi.content" value="329d36a052db0f9fa03962224f27b31e2c7d82301f400289308de3e113784de7"/>
       <attribute name="url" value="release/org.restlet.ext.xdb.jar"/>
-      <attribute name="size" type="Long" value="29836"/>
+      <attribute name="size" type="Long" value="29835"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.xdb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.xdb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.xdb"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xdb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.servlet,org.restlet.ext.servlet,org.restlet,org.restlet.engine,org.restlet.engine.adapter,javax.servlet.http,org.restlet.ext.xdb.internal,org.restlet.ext.servlet.internal,org.restlet.data"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.xdb.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xdb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.util,org.restlet.engine.header,javax.servlet,org.restlet.data,org.restlet,org.restlet.util,org.restlet.engine.adapter,javax.servlet.http,org.restlet.engine.connector,org.restlet.representation,org.restlet.ext.servlet.internal,org.restlet.service,org.restlet.engine.local,org.restlet.ext.xdb"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="resources"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xdb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="resources.sql"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xdb"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
@@ -18985,34 +19335,34 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.xml"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="29045b0eb0dc5721beb4f77e1f23a478b8bb5e526e2c6980a2a8625616dc16f7"/>
+      <attribute name="osgi.content" value="d5e972013fec9b267d11532ecfb16f78c12d37fdef61817641f2ea7852d472f5"/>
       <attribute name="url" value="release/org.restlet.ext.xml.jar"/>
-      <attribute name="size" type="Long" value="32344"/>
+      <attribute name="size" type="Long" value="32341"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.xml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.xml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.xml"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,javax.xml.transform,javax.xml.transform.stream,javax.xml.parsers,org.restlet.representation,javax.xml.transform.dom,org.restlet.engine,org.w3c.dom,org.xml.sax,javax.xml.validation,javax.xml.transform.sax,org.restlet.ext.xml.internal,org.restlet,org.restlet.routing,org.restlet.resource,org.restlet.engine.resource,org.restlet.engine.converter,javax.xml.namespace,javax.xml.xpath,org.xml.sax.helpers"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.xml.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xml"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.xml.sax,org.restlet.data,javax.xml.transform,javax.xml.transform.stream,org.restlet.representation,org.restlet"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -19166,27 +19516,27 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet.ext.xstream"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="9919ebe9d11c39b494b993cfe0aa46720a5dd06a47a8189f413e719e975c285d"/>
+      <attribute name="osgi.content" value="af02131da5a50903b2f18cc92dfdbb6b740661c636d2ff54ce09360647ce7655"/>
       <attribute name="url" value="release/org.restlet.ext.xstream.jar"/>
       <attribute name="size" type="Long" value="9044"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet.ext.xstream"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet.ext.xstream"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.ext.xstream"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet.ext.xstream"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.resource,org.restlet.representation,com.thoughtworks.xstream,com.thoughtworks.xstream.io.json,com.thoughtworks.xstream.io,org.restlet.data,com.thoughtworks.xstream.io.xml,com.thoughtworks.xstream.security,org.restlet.engine.converter,org.restlet.engine.resource"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
@@ -19237,181 +19587,181 @@
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="org.restlet"/>
       <attribute name="type" value="osgi.bundle"/>
-      <attribute name="version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.content">
-      <attribute name="osgi.content" value="f2dc32f15b5c2a6ed3cb04fa65775704a1f6859c1ea1409f960defb851fb3822"/>
+      <attribute name="osgi.content" value="6d966615e174921bfd5d278ef39e41ec8af05d759e282e7af40cd3b118956e47"/>
       <attribute name="url" value="release/org.restlet.jar"/>
-      <attribute name="size" type="Long" value="720433"/>
+      <attribute name="size" type="Long" value="722140"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
     </capability>
     <capability namespace="osgi.wiring.bundle">
       <attribute name="osgi.wiring.bundle" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.host">
       <attribute name="osgi.wiring.host" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.application,org.restlet.resource,org.restlet.util,org.restlet.engine,org.restlet.routing,org.restlet.service,org.restlet.engine.resource,org.restlet.security,org.restlet.data,org.restlet.engine.connector,org.restlet.representation,org.restlet.engine.component,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.data"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.util,org.restlet.util,org.restlet,org.restlet.engine.security,org.restlet.representation,org.restlet.engine,org.restlet.routing,org.restlet.engine.io,org.restlet.security,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.routing,org.restlet.data,org.restlet,org.restlet.representation,org.restlet.engine.log,org.restlet.engine.security,org.restlet.engine.io,org.restlet.engine.util,org.restlet.engine.converter,org.restlet.engine.connector,org.restlet.engine.local,org.restlet.service,org.restlet.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.adapter"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet,org.restlet.data,org.restlet.representation,org.restlet.util,org.restlet.engine.header,org.restlet.engine,org.restlet.service,org.restlet.engine.connector,org.restlet.engine.util,org.restlet.engine.security,org.restlet.engine.io"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.application"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet,org.restlet.routing,org.restlet.service,org.restlet.util,org.restlet.engine,org.restlet.representation,org.restlet.engine.util,org.restlet.engine.io,org.restlet.engine.resource,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.component"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.routing,org.restlet.data,org.restlet,org.restlet.util,org.restlet.engine.util,org.restlet.service,org.restlet.engine.log,org.restlet.engine,org.restlet.resource,org.restlet.representation,javax.xml.parsers,org.w3c.dom,org.xml.sax"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.connector"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet,org.restlet.representation,org.restlet.util,org.restlet.service,org.restlet.data,org.restlet.engine,org.restlet.engine.util,org.restlet.engine.local,org.restlet.engine.adapter,javax.net.ssl,com.sun.net.httpserver,org.restlet.engine.ssl,org.restlet.engine.log"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.converter"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.resource,org.restlet.representation,org.restlet.engine.resource,org.restlet.engine,org.restlet,org.restlet.engine.application,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.header"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.util,org.restlet.representation,org.restlet.engine.util,org.restlet,org.restlet.engine.security"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.internal"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.osgi.framework,org.restlet,org.restlet.engine"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.io"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.representation,org.restlet,org.restlet.engine.util,org.restlet.data,org.restlet.engine,org.restlet.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.local"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.service,org.restlet.data,org.restlet.representation,org.restlet,org.restlet.resource,org.restlet.engine.io,org.restlet.util,org.restlet.engine.connector"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.log"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.engine.io,org.restlet.engine.util,org.restlet,org.restlet.routing,org.restlet.service,org.restlet.data,org.restlet.engine"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.resource"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="org.restlet.service,org.restlet.data,org.restlet.resource,org.restlet.representation,org.restlet.engine.connector,org.restlet,org.restlet.engine.application"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.service,org.restlet.data,org.restlet.resource,org.restlet.representation,org.restlet.engine.connector,org.restlet,org.restlet.engine.application,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.security"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.util,org.restlet,org.restlet.engine,org.restlet.engine.header,org.restlet.engine.util,org.restlet.security"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.ssl"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="javax.net.ssl,org.restlet.data,org.restlet.util,org.restlet,org.restlet.engine"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.engine.util"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.engine.io,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.service,org.restlet.engine.log,org.w3c.dom.ls,org.xml.sax.helpers,org.xml.sax,org.restlet.engine,org.restlet.engine.security,org.restlet.routing"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.representation"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.engine.io,org.restlet,org.restlet.util,org.restlet.engine,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.resource"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.representation,org.restlet,org.restlet.util,org.restlet.engine,org.restlet.service,org.restlet.data,org.restlet.engine.util,org.restlet.engine.resource,org.restlet.engine.connector,org.restlet.engine.local,org.restlet.security"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.routing"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
-      <directive name="uses" value="org.restlet.data,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.resource"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
+      <directive name="uses" value="org.restlet.data,org.restlet.representation,org.restlet,org.restlet.util,org.restlet.resource,org.restlet.engine.header"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.security"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.routing,org.restlet.data,org.restlet,javax.security.auth.x500,org.restlet.engine.security,org.restlet.util,org.restlet.engine.util"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.service"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.data,org.restlet.representation,org.restlet.engine.application,org.restlet,org.restlet.resource,org.restlet.engine.converter,org.restlet.engine,org.restlet.routing,org.restlet.engine.util,org.restlet.engine.log,org.restlet.engine.resource"/>
     </capability>
     <capability namespace="osgi.wiring.package">
       <attribute name="osgi.wiring.package" value="org.restlet.util"/>
       <attribute name="version" type="Version" value="0.0.0"/>
       <attribute name="bundle-symbolic-name" value="org.restlet"/>
-      <attribute name="bundle-version" type="Version" value="2.3.1.v20150203-1110"/>
+      <attribute name="bundle-version" type="Version" value="2.3.4.v20150716-1217"/>
       <directive name="uses" value="org.restlet.representation,org.restlet.data,org.restlet.engine.io,org.restlet,org.restlet.engine.util,org.restlet.routing,org.restlet.service"/>
     </capability>
     <requirement namespace="osgi.wiring.package">
