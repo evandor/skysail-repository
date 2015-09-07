@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1441254898023" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1441602965746" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -12024,6 +12024,885 @@
       <attribute name="bundle-version" type="Version" value="4.8.0.1"/>
       <directive name="uses" value="joptsimple"/>
     </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="47e4cfb5eb49d08d1ec45f4b834c501c9d54a8a39f94dd12cd27680186dfc0e6"/>
+      <attribute name="url" value="release/org.apache.servicemix.bundles.lucene-5.2.1_1.jar"/>
+      <attribute name="size" type="Long" value="2395367"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.packed"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.index,org.apache.lucene.codecs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.similarities"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.store"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.lucene50"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util.packed,org.apache.lucene.store,org.apache.lucene.codecs,org.apache.lucene.codecs.perfield,org.apache.lucene.index,org.apache.lucene.util,org.apache.lucene.codecs.blocktree,org.apache.lucene.codecs.compressing"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.spans"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.index,org.apache.lucene.search.similarities"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.store,org.apache.lucene.util,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util.automaton"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tokenattributes"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.perfield"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.codecs,org.apache.lucene.util,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.index"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.util.automaton,org.apache.lucene.util.packed,org.apache.lucene.codecs,org.apache.lucene.store,org.apache.lucene.search,org.apache.lucene.document,org.apache.lucene.search.similarities,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.fst"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.store,org.apache.lucene.util.packed,org.apache.lucene.codecs"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.mutable"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.doc-files"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.index,org.apache.lucene.util.automaton,org.apache.lucene.search.similarities,org.apache.lucene.document,org.apache.lucene.store,org.apache.lucene.search.spans"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.document"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.index,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.compressing"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.store,org.apache.lucene.codecs,org.apache.lucene.index,org.apache.lucene.util.packed,org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.index,org.apache.lucene.util,org.apache.lucene.store,org.apache.lucene.document,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.codecs.blocktree"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.index,org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.codecs,org.apache.lucene.util.fst,org.apache.lucene.util.automaton"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.store,org.apache.lucene.index,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.search.payloads"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.search.similarities,org.apache.lucene.util,org.apache.lucene.search.spans,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.util.automaton"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.index"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="c77e0dac0ed85e96c4df4b06a90063d18d8ff2079ea309e3c5e4ace7e4ad230b"/>
+      <attribute name="url" value="release/org.apache.servicemix.bundles.lucene-analyzers-common-5.2.1_1.jar"/>
+      <attribute name="size" type="Long" value="1605213"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.wikipedia"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.id"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hy"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.apache.lucene.analysis.snowball,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.path"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hu"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.lv"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.pt"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.de"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hi"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.in,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.standard"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.standard.std40"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.custom"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.da"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.query"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.core,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.tr"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.apache.lucene.analysis.snowball,org.tartarus.snowball,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ckb"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.compound.hyphenation"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.xml.sax,org.xml.sax.helpers,javax.xml.parsers"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.reverse"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.th"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.cz"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.shingle"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.standard,org.apache.lucene.analysis,org.apache.lucene.util,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.standard.std40"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.miscellaneous"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.util.fst"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.sinks"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.gl"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.pt"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.cjk"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.pattern"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis,org.apache.lucene.util,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.charfilter"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.sv"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.compound"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis,org.xml.sax,org.apache.lucene.analysis.compound.hyphenation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.sr"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ca"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.apache.lucene.analysis.snowball,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.charfilter"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.util,org.apache.lucene.util.fst"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.util"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.core,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.fr"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ga"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.apache.lucene.analysis.snowball,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.hunspell"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.util.fst,org.apache.lucene.store,org.apache.lucene.util.automaton,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.br"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.fr"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.payloads"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.synonym"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.store,org.apache.lucene.util.fst,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.core,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.bg"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.no"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.commongrams"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.fi"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ru"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ro"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.apache.lucene.analysis.snowball,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.nl"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.analysis.snowball,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.fa"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.ar,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.snowball"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ar"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.eu"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.tartarus.snowball.ext,org.apache.lucene.analysis.snowball,org.tartarus.snowball,org.apache.lucene.analysis,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.ngram"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.miscellaneous"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.core"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis,org.apache.lucene.util,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.es"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.en"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.standard,org.apache.lucene.analysis.util,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.it"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.snowball,org.apache.lucene.util,org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.analysis.miscellaneous,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.in"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.analysis.el"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.analysis.util,org.apache.lucene.analysis.standard,org.apache.lucene.analysis.core,org.apache.lucene.analysis.standard.std40,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.tartarus.snowball"/>
+      <attribute name="version" type="Version" value="5.2.1.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.tartarus.snowball.ext"/>
+      <attribute name="version" type="Version" value="5.2.1.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-analyzers-common"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.tartarus.snowball"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.store)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util.automaton)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util.fst)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax.helpers)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="3f98d950f4f330dfcb448441bc19efe15277351ce58c68fdc8c3657379d2e379"/>
+      <attribute name="url" value="release/org.apache.servicemix.bundles.lucene-queryparser-5.2.1_1.jar"/>
+      <attribute name="size" type="Long" value="417505"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.messages"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.standard.nodes"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.document,org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.simple"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.analysis,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.builders"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.standard.parser"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.complexPhrase"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.search.spans,org.apache.lucene.queryparser.classic,org.apache.lucene.index,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.classic"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.analysis,org.apache.lucene.document,org.apache.lucene.util,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.processors"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.config"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.messages"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.messages"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.standard.builders"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.search,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.standard.parser,org.apache.lucene.index,org.apache.lucene.queryparser.flexible.standard.nodes,org.apache.lucene.document,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.xml.builders"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.xml,org.w3c.dom,org.apache.lucene.search,org.apache.lucene.queries,org.apache.lucene.search.spans,org.apache.lucene.search.payloads,org.apache.lucene.index,org.apache.lucene.sandbox.queries,org.apache.lucene.analysis,org.apache.lucene.util,org.apache.lucene.queries.mlt,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.queryparser.classic"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.ext"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.queryparser.classic,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.standard"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.document,org.apache.lucene.analysis,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.standard.builders,org.apache.lucene.queryparser.flexible.standard.processors,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.standard.parser"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.analyzing"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.queryparser.classic,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.xml"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.w3c.dom,org.apache.lucene.queryparser.xml.builders,org.apache.lucene.search,org.apache.lucene.queryparser.classic,javax.xml.parsers,org.apache.lucene.analysis,org.xml.sax,javax.xml.transform.stream,javax.xml.transform.dom,javax.xml.transform"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.core.builders,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.config"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.precedence.processors"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.standard.processors"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.standard.config"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.document,org.apache.lucene.search,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.surround.parser"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.surround.query"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.config"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.precedence"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.precedence.processors,org.apache.lucene.queryparser.flexible.standard,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.analysis"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.surround.query"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.search.spans,org.apache.lucene.index,org.apache.lucene.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.nodes"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.util"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.standard.processors"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.standard.nodes,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.standard.config,org.apache.lucene.queryparser.flexible.core.config,org.apache.lucene.queryparser.flexible.core.processors,org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.core.nodes,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.standard.parser,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes,org.apache.lucene.util,org.apache.lucene.search,org.apache.lucene.document"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.core.parser"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.core.nodes"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.queryparser.flexible.standard.parser"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-queryparser"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.queryparser.flexible.core.messages,org.apache.lucene.queryparser.flexible.messages,org.apache.lucene.queryparser.flexible.core.util,org.apache.lucene.queryparser.flexible.core.parser,org.apache.lucene.queryparser.flexible.core,org.apache.lucene.queryparser.flexible.standard.nodes,org.apache.lucene.queryparser.flexible.core.nodes"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.parsers)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.dom)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.xml.transform.stream)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.document)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.queries)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.queries.mlt)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.sandbox.queries)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.payloads)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.spans)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.w3c.dom)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+    </requirement>
   </resource>
   <resource>
     <capability namespace="osgi.identity">
