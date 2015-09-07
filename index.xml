@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1441605400078" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1441605499207" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -12982,6 +12982,62 @@
     </requirement>
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=org.xml.sax)"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.apache.servicemix.bundles.lucene-sandbox"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="db910c9bb96fc50d793d1b9288934b6b63ada67035dd728d838fe0eb995669cd"/>
+      <attribute name="url" value="release/org.apache.servicemix.bundles.lucene-sandbox-5.2.1_1.jar"/>
+      <attribute name="size" type="Long" value="39075"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.apache.servicemix.bundles.lucene-sandbox"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.apache.servicemix.bundles.lucene-sandbox"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.sandbox.queries.regex"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-sandbox"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.util,org.apache.regexp,org.apache.lucene.search,org.apache.lucene.index"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.apache.lucene.sandbox.queries"/>
+      <attribute name="version" type="Version" value="5.2.1"/>
+      <attribute name="bundle-symbolic-name" value="org.apache.servicemix.bundles.lucene-sandbox"/>
+      <attribute name="bundle-version" type="Version" value="5.2.1.1"/>
+      <directive name="uses" value="org.apache.lucene.search,org.apache.lucene.util,org.apache.lucene.index,org.apache.lucene.search.similarities,org.apache.lucene.analysis,org.apache.lucene.analysis.tokenattributes"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.analysis.tokenattributes)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.index)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.search.similarities)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.lucene.util)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.regexp)"/>
     </requirement>
   </resource>
   <resource>
