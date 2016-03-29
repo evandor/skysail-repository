@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<repository increment="1458105907560" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+<repository increment="1459273941211" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="osgi.identity" value="biz.aQute.bnd.annotation"/>
@@ -3622,6 +3622,36 @@
     <requirement namespace="osgi.wiring.package">
       <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
       <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="io.skysail.bundled.org.osgi.service.component.annotations-runtime"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.3.0.201511301122"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="920984a0b4ef34e13cd3e4ac08fdb263f5282c44c97d32ac56680b908989bb98"/>
+      <attribute name="url" value="release/io.skysail.bundled.org.osgi.service.component.annotations-runtime-1.3.0.jar"/>
+      <attribute name="size" type="Long" value="34559"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="io.skysail.bundled.org.osgi.service.component.annotations-runtime"/>
+      <attribute name="bundle-version" type="Version" value="1.3.0.201511301122"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="io.skysail.bundled.org.osgi.service.component.annotations-runtime"/>
+      <attribute name="bundle-version" type="Version" value="1.3.0.201511301122"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.osgi.service.component.annotations"/>
+      <attribute name="version" type="Version" value="1.3.0"/>
+      <attribute name="bundle-symbolic-name" value="io.skysail.bundled.org.osgi.service.component.annotations-runtime"/>
+      <attribute name="bundle-version" type="Version" value="1.3.0.201511301122"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.5))"/>
     </requirement>
   </resource>
   <resource>
